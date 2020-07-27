@@ -1,23 +1,21 @@
 ---
-title: "Rio Furniture"
-description: "this is meta description"
+title: "Dispatch"
+description: "Service dispatching optimization app"
 draft: false
 image : "images/portfolio/work2.jpg"
 bg_image: "images/featue-bg.jpg"
-category: "Illustration"
+category: "React"
 information:
-  - label : "Client"
-    info : "Jannie Kelonsky"
+  - label : "Demo"
+    info : "[YouTube video](https://youtu.be/rcuHRYEueVA)"
   - label : "What We Did"
-    info : "Website Redesign"
-  - label : "Tools Used"
-    info : "Photoshop,Illustrator"
-  - label : "Completed on"
-    info : "17th March 2014"
+    info : "Web app development"
+  - label : "Tech stack"
+    info : "React Rails API"
+  - label : "Completed"
+    info : "June 2020"
   - label : "Skills"
-    info : "HTML5 / PHP / CSS3"
-  - label : "Client"
-    info : "Jannie Kelonsky"
+    info : "MapBox, Material UI"
 ---
 
 ## Behance Website Redesign

@@ -13,7 +13,7 @@ information:
   - label : "Tech stack"
     info : "React/Redux Rails 
             API"
-  - label : "Completed on"
+  - label : "Completed"
     info : "July 2020"
   - label : "Skills"
     info : "Bootstrap, FullCalendar"
