@@ -3,29 +3,31 @@ banner:
   enable : true
   bg_image : "images/slider-bg.jpg"
   bg_overlay : true
-  title : "A Digital Marketing <br/> & Design Agency"
-  content : "We love the Web and the work we do.We work closely with our clients to deliver  the best possible solutions for their needs"
+  title : "Full-Stack Web Developer <br/> & Software Engineer"
+  content : "I love overcoming challenges with technology and tenacity and playing on a team <br/>
+  and I am passionate about educating and inspiring others."
   button:
     enable : true
-    label : "Discover Our Project"
+    label : "Check out my projects"
     link : "project"
 
 ############################# About #################################
 about:
   enable : true
-  title : "About Us"
-  description : "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id."
+  title : "About Me"
+  description : "An industrial & systems engineer turned full-stack web developer. As a husband and father of three, I am a curious and determined craftsman..."
+  content : "After 8 years in the HVAC industry consulting with design engineers, contractors, and serving building owners, a deep inward turn led me to Bible school and into 10 years of collegiate ministry. This produced in me a blend of technical prowess and ability to work with very diverse groups of people from varying backgrounds both technical and cultural.  
+            
+
+            My whole life has centered around teams, tech, growth, competition, and the mastering of craft. Through a youth in team sports and mechanics, a degree in engineering, and years in  passion, curiosity, and drive have been the theme. Over and over I am captivated with curiosity and desire to understand and master new things, things such classic cars, specialty coffee roasting, craft brewing, home renovation, lawn care, fishing, and dog training to name a few. Professionally this has included code, development, construction, people, and cause.
+
+
+            I am now looking to partner with a company to create powerful tech solutions to challenging real-world problems. I an hungy for an environment where teamwork, learning, advancing, and mutual growth are  priorities."
   image : "images/wrapper-img.png"
 
 
 ######################### Portfolio ###############################
-portfolio:
+portfolio:  
   enable : true
   bg_image : "images/featue-bg.jpg"
   title : "WE BELIEVE IN GREAT IDEAS"

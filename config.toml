@@ -132,7 +132,7 @@ weight = 2
 
 [[Languages.en.menu.main]]
 name = "Projects"
-URL = "projects"
+URL = "project"
 weight = 3
 
 [[Languages.en.menu.main]]
