@@ -4,7 +4,7 @@ description: "Connecting those in need with those who care"
 draft: false
 image : "images/portfolio/work1.jpg"
 bg_image: "images/featue-bg.jpg"
-category: "React"
+category: ["React", "Redux"]
 information:
   - label : "Demo"
     info : "[YouTube video](https://youtu.be/O9qfgxeag7g)"

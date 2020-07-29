@@ -3,9 +3,10 @@ banner:
   enable : true
   bg_image : "images/slider-bg.jpg"
   bg_overlay : true
-  title : "Full-Stack Web Developer <br/> & Software Engineer"
-  content : "I love overcoming challenges with technology and tenacity and playing on a team <br/>
-  and I am passionate about educating and inspiring others."
+  title : "Full-Stack Web Developer"
+  content : "I love overcoming challenges with technology and tenacity.
+
+            I enjoy being on a team and am passionate about educating and inspiring others."
   button:
     enable : true
     label : "Check out my projects"
@@ -28,7 +29,7 @@ about:
 
 ######################### Portfolio ###############################
 portfolio:  
-  enable : true
+  enable : false
   bg_image : "images/featue-bg.jpg"
   title : "WE BELIEVE IN GREAT IDEAS"
   content : "
@@ -45,12 +46,10 @@ portfolio:
     label : "View Works"
     link : "project"
 
-
 ############################# Service ############################
 service:
   enable : true
   # service content comes from "data/*/service.yml" file
-
 
 ############################ call to action ###########################
 cta:
@@ -65,7 +64,7 @@ cta:
 
 ############################# Funfacts ###############################
 funfacts:
-  enable : true
+  enable : false
   title : "Fun Facts About Us"
   description : "'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, <br> there live the
           blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics'"
