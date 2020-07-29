@@ -46,16 +46,16 @@ a {
 	}
 }
 
-
-
 .section {
 	padding: 100px 0;
 }
 
 .section-title {
 	padding-bottom: 50px;
+	p {
+		text-justify: inter-word;
+	}
 }
-
 
 .bg-gray {
 	background: #fafafa;

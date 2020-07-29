@@ -26,10 +26,12 @@
               {{ end }}
             </div>
           </div>
-          <div class="row shuffle-wrapper">
+          <div class="row shuffle-wrapper m-3">
             {{ range .Data.Pages }}
             <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;{{ .Params.Category | urlize }}&quot;]">
+              <div class="p-3">
               <img src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+              </div>
               <div class="portfolio-hover">
                 <div class="portfolio-content">
                   <a href="{{ .Params.Image | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
