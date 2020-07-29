@@ -11,7 +11,7 @@
       <div class="col-md-12">
         <div class="block">
           <h1>{{ .title | markdownify }}</h1>
-          <p>{{ .content | markdownify }}</p>
+          <!-- <p>{{ .content | markdownify }}</p> -->
           {{ if .button.enable }}
           {{ with .button }}
           <a href="{{ .link | relLangURL }}" target="_blank" class="btn btn-main animated fadeInUp">{{ .label }}</a>
@@ -19,18 +19,15 @@
           {{ end }}
         </div>
       </div>
+          {{ if $data.homepage.service.enable }}
+          {{ partial "service.html" . }}
+          {{ end }}
     </div>
   </div>
 </section>
 {{ end }}
 {{ end }}
 <!-- /banner -->
-
-<!-- Service -->
-{{ if $data.homepage.service.enable }}
-{{ partial "service.html" . }}
-{{ end }}
-<!-- /service -->
 
 {{ if $data.homepage.about.enable }}
 {{ with $data.homepage.about }}
@@ -44,12 +41,14 @@
             <h2>{{ .title | markdownify }}</h2>
             <p>{{ .description | markdownify }}</p>
           </div>
-          <p>{{ .content | markdownify }}</p>
+          <p style="text-align: justify">{{ .content | markdownify }}</p>
         </div>
       </div>
       <div class="col-md-5 col-sm-12">
         <div class="block">
-          <img src="{{ .image | relURL }}" class="img-responsive" alt="Img">
+          <div class="about-img"></div>
+            <img src="{{ .image | relURL }}" class="img-responsive" alt="laptop with coffee" style="padding: 60px 0px 0px 40px">
+          </div>
         </div>
       </div>
     </div>

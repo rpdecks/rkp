@@ -1,24 +1,15 @@
 {{ $data := index site.Data site.Language.Lang }}
 {{ with $data.service.service }}
-<section class="service">
-  <div class="container">
-    <div class="row">
-      <div class="section-title">
-        <h2>{{ .title | markdownify }}</h2>
-        <p>{{ .description | markdownify }}</p>
-      </div>
-    </div>
-    <div class="row">
-      {{ range .service_item }}
-      <div class="col-xs-6 col-md-4 col-lg-2">
-        <div class="service-item">
-          <i class="devicons {{ .icon }}"></i>
-          <h4>{{ .name | markdownify }}</h4>
-          <!-- <p>{{ .content | markdownify }}</p> -->
+  <section class="service">
+      <div class="row">
+        {{ range .service_item }}
+        <div class="col-xs-6 col-md-2 col-lg-1">
+          <div class="service-item">
+            <i class="devicons {{ .icon }}"></i>
+            <h4>{{ .name | markdownify }}</h4>
+          </div>
         </div>
+        {{ end }}
       </div>
-      {{ end }}
-    </div>
-  </div>
 </section>
 {{ end }}

@@ -16,7 +16,7 @@
 
   .block {
     position: relative;
-    z-index: 999999;
+    z-index: 999999; 
   }
 
   h1 {
@@ -32,12 +32,6 @@
     color: #f9f9f9;
   }
 }
-
-
-
-
-
-
 
 .template-list {
   padding: 100px 0;
@@ -99,9 +93,6 @@
   position: relative;
 }
 
-
-
-
 .call-to-action {
   background: #3483de;
   color: #fff;
@@ -124,12 +115,6 @@
   color: #666;
 }
 
-
-
-
-
-
-
 #mouse-scroll {
   style: block;
 }
@@ -141,7 +126,6 @@
   -webkit-transform: translateX(-50%);
   z-index: 9999;
   bottom: 50px;
-
 }
 
 #mouse-scroll span {
@@ -247,7 +231,6 @@ footer a:hover {
   color: #fff;
 }
 
-
 .overly {
   position: relative;
 
@@ -260,4 +243,5 @@ footer a:hover {
     right: 0;
     bottom: 0;
   }
+
 }

@@ -8,7 +8,13 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <img class="img-responsive w-100" src="{{ .Params.Image | relURL }}" alt="">
+        {{ if .Params.deployed_url }}
+        <a href={{ printf "%s" $.Params.deployed_url}}>
+          <img class="img-responsive w-100" src="{{ .Params.Image | relURL }}" alt="">
+        </a>
+        {{ else }}
+          <img class="img-responsive w-100" src="{{ .Params.Image | relURL }}" alt="">
+        {{ end }}
       </div>
       <div class="col-md-4">
         <div class="project-details">

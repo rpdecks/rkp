@@ -43,7 +43,6 @@ input[type="tel"] {
   }
 }
 
-
 .form-control {
   box-shadow: none;
   border-radius: 0;
@@ -54,11 +53,9 @@ input[type="tel"] {
   }
 }
 
-
 .slick-slide {
   outline: 0
 }
-
 
 // Button Style
 
@@ -87,7 +84,6 @@ input[type="tel"] {
   }
 }
 
-
 .btn-solid-border {
   border: 1px solid $light;
   background: transparent;
@@ -98,7 +94,6 @@ input[type="tel"] {
     background: $primary-color;
   }
 }
-
 
 .btn-transparent {
   @extend .btn-main;
@@ -138,21 +133,11 @@ input[type="tel"] {
   border-radius: 50px;
 }
 
-
 .btn.active:focus,
 .btn:active:focus,
 .btn:focus {
   outline: 0;
 }
-
-
-
-
-
-
-
-
-
 
 .mt-10 {
   margin-top: 20px;
@@ -185,7 +170,6 @@ input[type="tel"] {
 .margin-0 {
   margin: 0 !important;
 }
-
 
 /* preloader */
 
@@ -229,7 +213,6 @@ input[type="tel"] {
   background: #202122;
 }
 
-
 .section {
   padding: 100px 0;
 }
@@ -265,14 +248,12 @@ input[type="tel"] {
   }
 }
 
-
 .section-subtitle {
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 30px;
 
 }
-
 
 .page-title {
   padding: 100px 0;
@@ -295,7 +276,6 @@ input[type="tel"] {
   }
 }
 
-
 .heading {
   padding-bottom: 60px;
   text-align: center;
@@ -314,14 +294,6 @@ input[type="tel"] {
     font-weight: 300;
   }
 }
-
-
-
-
-
-
-
-
 
 .page-wrapper {
   padding: 70px 0;
@@ -365,8 +337,6 @@ input[type="tel"] {
     }
   }
 }
-
-
 
 .dropdown-slide {
   position: static;
@@ -415,9 +385,6 @@ input[type="tel"] {
     }
   }
 }
-
-
-
 
 .commonSelect {
   margin-left: 10px;
@@ -482,7 +449,6 @@ input[type="tel"] {
   }
 }
 
-
 .commonAccordion {
   .panel {
     border-radius: 0;
@@ -522,7 +488,6 @@ input[type="tel"] {
   @extend .commonAccordion;
 }
 
-
 .list-circle {
   padding-left: 20px;
 
@@ -530,7 +495,6 @@ input[type="tel"] {
     list-style-type: circle;
   }
 }
-
 
 .play-icon {
   border: 1px solid $border-color;
@@ -544,7 +508,6 @@ input[type="tel"] {
     line-height: 60px;
   }
 }
-
 
 .alert-common {
   border-radius: 0;
@@ -573,8 +536,6 @@ input[type="tel"] {
   }
 }
 
-
-
 .overly {
   position: relative;
 
@@ -596,8 +557,6 @@ input[type="tel"] {
 .owl-theme .owl-dots .owl-dot:hover span {
   background: $primary-color !important;
 }
-
-
 
 #success,
 #error {

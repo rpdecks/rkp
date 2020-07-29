@@ -4,8 +4,11 @@ description: "Service dispatching optimization app"
 draft: false
 image : "images/portfolio/work2.jpg"
 bg_image: "images/featue-bg.jpg"
-category: ["React"]
+category: "React"
+deployed_url : "https://dispatch-app-front.herokuapp.com"
 information:
+  - label : "Deploy status"
+    info : "[Live on Hekroku](https://dispatch-app-front.herokuapp.com/)"
   - label : "Demo"
     info : "[YouTube video](https://youtu.be/rcuHRYEueVA)"
   - label : "What We Did"

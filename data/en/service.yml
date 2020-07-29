@@ -91,9 +91,9 @@ service:
     - icon : devicons-wordpress
       name: WordPress
 
-    # service item loop
-    - icon : devicons-trello
-      name: Trello
+    # # service item loop
+    # - icon : devicons-trello
+    #   name: Trello
 
 ############################# call to action #################################
 cta:
