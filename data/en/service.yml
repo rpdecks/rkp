@@ -43,10 +43,6 @@ service:
   description : ""
   service_item:
     # service item loop
-    - icon : devicons-ruby
-      name: Ruby
-
-    # service item loop
     # - icon : ion-social-javascript #ionicon pack v2 : https://ionicons.com/v2/ #ionicon pack v2 : https://ionicons.com/v2/
     - icon : devicons-javascript
       name: Javascript
@@ -56,8 +52,8 @@ service:
       name: React
 
     # service item loop
-    - icon : devicons-git
-      name: Github
+    - icon : devicons-ruby
+      name: Ruby
 
     # service item loop
     - icon : devicons-postgresql
@@ -80,16 +76,20 @@ service:
       name: Bootstrap
 
     # service item loop
+    - icon : devicons-wordpress
+      name: WordPress
+
+    # service item loop
+    - icon : devicons-git
+      name: Github
+
+    # service item loop
     - icon : devicons-vim
       name: Vim 
 
     # service item loop
     - icon : devicons-visualstudio
       name: Visual Studio 
-
-    # service item loop
-    - icon : devicons-wordpress
-      name: WordPress
 
     # # service item loop
     # - icon : devicons-trello

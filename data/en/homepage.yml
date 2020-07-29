@@ -9,7 +9,7 @@ banner:
             I enjoy being on a team and am passionate about educating and inspiring others."
   button:
     enable : true
-    label : "Check out my projects"
+    label : "Projects"
     link : "project"
 
 ############################# About #################################
@@ -26,7 +26,7 @@ about:
 
 ######################### Portfolio ###############################
 portfolio:  
-  enable : false
+  enable : true
   bg_image : "images/featue-bg.jpg"
   title : "WE BELIEVE IN GREAT IDEAS"
   content : "
@@ -43,7 +43,7 @@ portfolio:
     label : "View Works"
     link : "project"
 
-############################# Service ############################
+############################# Skills ############################
 service:
   enable : true
   # service content comes from "data/*/service.yml" file
@@ -52,11 +52,11 @@ service:
 cta:
   enable : true
   bg_image : "images/call-to-action-bg.jpg"
-  title : "We design delightful digital experiences."
-  content : "Read more about what we do and our philosophy of design. Judge for yourself The work and results <br> we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
+  title : "Ready to Partner?"
+  content : ""
   button:
     enable : true
-    label : "Tell Us Your Story"
+    label : "Let's connect"
     link : "contact"
 
 ############################# Funfacts ###############################

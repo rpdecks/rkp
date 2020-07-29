@@ -3,7 +3,8 @@
   <section class="service">
       <div class="row">
         {{ range .service_item }}
-        <div class="col-xs-6 col-md-2 col-lg-1">
+      <div class="col-sm-6 col-md-3">
+        <!-- <div class="col-xs-6 col-md-2 col-lg-1"> -->
           <div class="service-item">
             <i class="devicons {{ .icon }}"></i>
             <h4>{{ .name | markdownify }}</h4>
