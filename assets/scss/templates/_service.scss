@@ -1,34 +1,20 @@
 .service {
-  // padding: 50px 0 0 0;
-  position: absolute;
-  bottom: 10px;
-
-  .banner-icon-container {
-    margin: auto;
-    align-items: center;
-  }
+  text-align: center;
+  padding: 90px 0;
 
   .service-item {
-
-    .devicons {
-      color: #c4cad0;
-      font-size: 35px;
-      font-weight: 50;
-      align-items: center;
-    }
+    padding-bottom: 30px;
 
     i {
       font-size: 60px;
       color: $primary-color;
-    } 
+    }
 
     h4 {
       padding-top: 15px;
       margin: 0;
       font-weight: 500;
-      color: #c4cad0;
-      // letter-spacing: 2px;
-      // text-transform: uppercase;
+      text-transform: uppercase;
     }
 
     p {
@@ -76,6 +62,10 @@
   }
 }
 
+
+
+
+
 .service-arrow {
   .block {
     padding: 70px 30px;
@@ -89,6 +79,9 @@
     }
   }
 }
+
+
+
 
 .service-list {
   .block {

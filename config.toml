@@ -55,9 +55,9 @@ logo = "images/logo.png"
 description = "This is meta description"
 author = "Themefisher"
 # Contact Information
-mobile = "0124857985320"
-email = "demo@email.com"
-location = "North Main Street,Brooklyn Australia"
+mobile = "678.662.8857"
+email = "rpdecks@gmail.com"
+location = "Athens, Georgia"
 # contact form action
 contact_form_action = "#" # contact form works with : https://formspree.io
 # Google Analitycs
@@ -87,16 +87,8 @@ map_marker = "images/marker.png"
   
 ############################# social site ########################
 [[params.social]]
-icon = "ion-social-googleplus-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
-
-[[params.social]]
 icon = "ion-social-linkedin-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
-
-[[params.social]]
-icon = "ion-social-pinterest-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
+link = "https://www.linkedin.com/in/robertkevinphillips"
 
 [[params.social]]
 icon = "ion-social-dribbble-outline" #ionicon pack v2 : https://ionicons.com/v2/
@@ -110,8 +102,15 @@ link = "#"
 icon = "ion-social-facebook-outline" #ionicon pack v2 : https://ionicons.com/v2/
 link = "#"
 
+[[params.social]]
+icon = "devicons    devicons-github" 
+link = "https://www.github.com/rpdecks"
 
+[[params.social]]
+icon = "ion-ios-email" 
+link = "mailto:rpdecks@gmail.com"
 ################################ English Language ########################
+
 [Languages.en]
 languageName = "En"
 languageCode = "en-us"
@@ -146,39 +145,33 @@ weight = 4
 [[Languages.en.menu.main]]
 name = "Contact"
 URL = "contact"
-weight = 7
-
+weight = 5
 
 # footer menu
 [[Languages.en.menu.footer]]
-name = "About"
-URL = "about"
+name = "Home"
+URL = "/"
 weight = 1
 
 [[Languages.en.menu.footer]]
-name = "Project"
-URL = "project"
+name = "About"
+URL = "about"
 weight = 2
 
 [[Languages.en.menu.footer]]
-name = "Service"
-URL = "service"
+name = "Projects"
+URL = "project"
 weight = 3
 
 [[Languages.en.menu.footer]]
-name = "Pricing"
-URL = "pricing"
+name = "Blog"
+URL = "blog"
 weight = 4
-
-[[Languages.en.menu.footer]]
-name = "FAQ"
-URL = "faq"
-weight = 5
 
 [[Languages.en.menu.footer]]
 name = "Contact"
 URL = "contact"
-weight = 6
+weight = 5
 
 ################################ France Language ########################
 [Languages.fr]
