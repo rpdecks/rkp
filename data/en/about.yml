@@ -1,20 +1,20 @@
 ################################## About #####################################
 about:
   enable : true
-  image : "images/company/about.jpg"
-  title : "We strive to be the best and <br> make awesome work."
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius enim, accusantium repellat ex autem numquam
-          iure officiis facere vitae itaque.
-          
-          
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam qui vel cupiditate exercitationem, ea fuga est
-          velit nulla culpa modi quis iste tempora non, suscipit repellendus labore voluptatem dicta amet? Lorem ipsum
-          dolor sit amet, consectetur adipisicing elit. Provident, neque!"
+  image : "images/company/about_rkp.png"
+  title : "Industrial & Systems engineer turned <br/> full-stack web developer..."
+  content : "After 8 years in the HVAC industry consulting with design engineers, contractors, and building owners, a deep inward turn led me to Bible school and into 10 years of collegiate ministry. I feel this has produced in me a unique blend of technical prowess and ability to work with very diverse groups of people from varying backgrounds both technical and cultural.  
+  
+
+  My whole life has centered around teams, tech, growth, competition, and the mastering of craft. I grew up in youth team sports and dove into cars and auto mechanics as a teen. This lead me to a degree in engineering at Georgia followed by 8 and years in the commercial construction industry. I would say passion, curiosity, and drive have been the theme throughout. Over and over I’m gripped with curiosity, intrigue, and desire to understand and master new things like those classic cars, then dog training and craft brewing in college, and later specialty coffee roasting. As a dad, I stay busy with home renovation, lawn care, fishing, etc. Professionally this involved construction, development, people, and cause. This has eventually led to code and software.  
+
+
+  I have always seen things through a lens of what they could be. I am inspired by that kind of vision and motivated to build tirelessly to see it realized. I have an eye for systemic design, optimization, and a desire to see things work as they should. My way has always been to look for ways to utilize technology to solve problems and improve."
 
   button:
     enable : true
-    label : "Download Company Profile"
-    link : "#"
+    label : "Download Resume"
+    link : "https://www.robertkevinphillips.com/resume.pdf"
 
   funfacts:
     # funfacts loop

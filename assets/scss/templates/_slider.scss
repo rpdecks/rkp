@@ -33,11 +33,31 @@
     }
 
     p {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
       color: #b9b9b9;
       font-size: 18px;
       line-height: 27px;
       font-weight: 300;
+    }
+
+    .resume-links {
+      margin-top: 40px;
+      align-items: center;
+      text-align: center;
+
+      i {
+        font-size: 40px;
+        font-weight: 300;
+        color: #b9b9b9;
+      }
+
+      p {
+        color: #b9b9b9;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 300;
+        margin-bottom: 0;
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 .service {
   text-align: center;
-  padding: 90px 0;
+  padding-top: 90px;
 
   .service-item {
     padding-bottom: 30px;
@@ -20,6 +20,10 @@
     p {
       padding-top: 10px;
       margin: 0;
+    }
+
+    .devicons {
+      margin-top: 90px;
     }
   }
 }
@@ -62,10 +66,6 @@
   }
 }
 
-
-
-
-
 .service-arrow {
   .block {
     padding: 70px 30px;
@@ -79,9 +79,6 @@
     }
   }
 }
-
-
-
 
 .service-list {
   .block {
