@@ -8,13 +8,13 @@ banner:
 
             I enjoy being on a team and am passionate about educating and inspiring others."
   button:
-    enable : true
+    enable : false
     label : "Projects"
     link : "project"
 
 ############################# About #################################
 about:
-  enable : true
+  enable : false
   title : "About Me"
   description : "An industrial & systems engineer turned full-stack web developer. As a husband and father of three, I am a curious and determined craftsman..."
   content : 
@@ -26,7 +26,7 @@ about:
 
 ######################### Portfolio ###############################
 portfolio:  
-  enable : true
+  enable : false
   bg_image : "images/featue-bg.jpg"
   title : "WE BELIEVE IN GREAT IDEAS"
   content : "
@@ -48,10 +48,17 @@ service:
   enable : true
   # service content comes from "data/*/service.yml" file
 
-############################ call to action ###########################
-cta:
+############################ Home projects ###########################
+homeProjects:
   enable : true
   bg_image : "images/call-to-action-bg.jpg"
+  title : "Featured Projects"
+  content : ""
+
+############################ Call to action ###########################
+cta:
+  enable : true
+  bg_image : ""
   title : "Ready to Partner?"
   content : ""
   button:

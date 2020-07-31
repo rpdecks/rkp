@@ -2,13 +2,13 @@
 title: "Babysitter"
 description: "Connecting those in need with those who care"
 draft: false
-image : "images/portfolio/work1.jpg"
+image : "images/portfolio/babysitter.jpg"
 bg_image: "images/featue-bg.jpg"
 category: "React"
-deployed_url : "https://dispatch-app-front.herokuapp.com"
+deployed_url : "https://babysitter-front.herokuapp.com/"
 information:
   - label : "Deploy status"
-    info : "pending"
+    info : "[Live on Hekroku](https://babysitter-front.herokuapp.com)"
   - label : "Demo"
     info : "[YouTube video](https://youtu.be/O9qfgxeag7g)"
   - label : "What We Did"

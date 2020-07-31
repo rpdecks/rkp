@@ -1,0 +1,49 @@
+.homeProjects {
+	padding: 70px 0px;
+	text-align: center;
+
+	h2 {
+    	color: #E3E3E4;
+		font-weight: 200;
+		font-size: 45px;
+		line-height: 60px;
+		letter-spacing: 10px;
+		padding-bottom: 15px;
+		text-transform: uppercase;
+	}
+	p {
+    	color: #E3E3E4;
+		font-size: 25px;
+		font-weight: 300;	
+	}
+	.btn-main {
+		font-size: 12px;
+		background: $primary-color;
+		color: $light;
+		display: inline-block;
+		font-size: 14px;
+		letter-spacing: 1px;
+		padding: 14px 35px;
+		text-transform: uppercase;
+		border-radius: 0;
+		@include transition (all, 0.2s, ease);
+	}
+	.social-icons {
+		margin-top: 30px;
+	  
+		li {
+		  display: inline-block;
+		  margin: 0 6px;
+		}
+	  
+		a {
+		  display: inline-block;
+		}
+	  
+		i {
+		  color: $light;
+		  margin-right: 25px;
+		  font-size: 30px;
+		}
+	  }
+}

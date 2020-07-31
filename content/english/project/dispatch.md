@@ -2,7 +2,7 @@
 title: "Dispatch"
 description: "Service dispatching optimization app"
 draft: false
-image : "images/portfolio/work2.jpg"
+image : "images/portfolio/dispatch.jpg"
 bg_image: "images/featue-bg.jpg"
 category: "React"
 deployed_url : "https://dispatch-app-front.herokuapp.com"

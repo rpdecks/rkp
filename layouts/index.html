@@ -59,6 +59,12 @@
 {{ end }}
 <!-- /skills -->
 
+<!-- Home projects -->
+{{ if $data.homepage.homeProjects.enable }}
+{{ partial "homeProjects.html" . }}
+{{ end }}
+<!-- /home projects -->
+
 {{ if $data.homepage.about.enable }}
 {{ with $data.homepage.about }}
 <!-- about -->

@@ -1,0 +1,132 @@
+{{ $data := index site.Data site.Language.Lang }}
+{{ with $data.homepage.homeProjects }}
+<section class="homeProjects bg-1 section-sm overly" style="background-image: url('{{.bg_image | absURL }}');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>{{ .title | markdownify }}</h2>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="portfolio-single-page section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <a href="https://babysitter-front.herokuapp.com">
+          <img class="img-responsive w-100" src="images/portfolio/babysitter.jpg" alt="babysitter-logo">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <div class="project-details">
+          <h4>Project Details</h4>
+          <ul>
+            <li><span>Deployment:</span> <strong><a href="https://babysitter-front.herokuapp.com">Live on Heroku</a></strong></li>
+            <li><span>Demo:</span> <strong><a href="https://youtu.be/O9qfgxeag7g">YouTube video</a></strong></li>
+          </ul>
+          <br>
+          <h4>Technology</h4>
+          <ul>
+            <div class="col-md-6">
+              <li><i class='ion-checkmark-circled'></i> Javascript</li>
+              <li><i class='ion-checkmark-circled'></i> React</li>
+              <li><i class='ion-checkmark-circled'></i> Redux</li>
+              <li><i class='ion-checkmark-circled'></i> Ruby on Rails</li>
+              <li><i class='ion-checkmark-circled'></i> Postgresql</li>
+            </div>
+            <div class="col-md-6">
+              <li><i class='ion-checkmark-circled'></i> Bootstrap</li>
+              <li><i class='ion-checkmark-circled'></i> CSS</li>
+              <li><i class='ion-checkmark-circled'></i> HTML</li>
+              <li><i class='ion-checkmark-circled'></i> FullCalendar API</li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="project-content mt-50">
+          <h3>Babysitter App</h3>
+          <p>
+            An interface for those with children and local child care providers, Babysitter aims to connect 
+            those in need with those who care. Parents can schedule and post babysitting jobs online and find 
+            qualified, vetted, and experienced babysitters in their area. Browse caregiver profiles, read 
+            reviews, and communicate directly with caregivers to find the best one for the job.
+          </p>
+          <p>
+            Caregivers can create a profile, browse, and apply for available babysitting jobs. Over time, 
+            caregivers can build a portfolio of completed work with positive reviews to build brand and 
+            reputation in their community enabling them to secure more jobs and higher pay.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="portfolio-single-page section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <a href="https://dispatch-app-front.herokuapp.com">
+          <img class="img-responsive w-100" src="images/portfolio/dispatch.jpg" alt="map image">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <div class="project-details">
+          <h4>Project Details</h4>
+          <ul>
+            <li><span>Deployment:</span> <strong><a href="https://dispatch-app-front.herokuapp.com">Live on Heroku</a></strong></li>
+            <li><span>Demo:</span> <strong><a href="https://youtu.be/rcuHRYEueVA">YouTube video</a></strong></li>
+          </ul>
+          <br>
+          <h4>Technology</h4>
+          <ul>
+            <div class="col-md-6">
+              <li><i class='ion-checkmark-circled'></i> Javascript</li>
+              <li><i class='ion-checkmark-circled'></i> React</li>
+              <li><i class='ion-checkmark-circled'></i> Ruby on Rails</li>
+              <li><i class='ion-checkmark-circled'></i> Postgresql</li>
+              <li><i class='ion-checkmark-circled'></i> Mapbox API</li>
+            </div>
+            <div class="col-md-6">
+              <li><i class='ion-checkmark-circled'></i> Material UI</li>
+              <li><i class='ion-checkmark-circled'></i> CSS</li>
+              <li><i class='ion-checkmark-circled'></i> HTML</li>
+              <li><i class='ion-checkmark-circled'></i> In-app messaging</li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="project-content mt-50">
+          <h3>Dispatch App</h3>
+          <p>
+            Graphical user inteface built on MapBox maps API designed to optimize service dispatcher assignment
+            task and workflow management. This app was built to assist an actual nurse dispatcher assign
+            patients to home healthcare hospice nurses through a large metro area. The dispatcher received 
+            appoinment/patient data and overlaid these locations on map with nurse locations to optimally assign
+            nurses to patients.
+          </p>
+          <p>
+            Althought built for a nursing application, dispatch could be easily customized for many types of location 
+            specific service professionals such as repair workers, delivery professionals, house cleaning, etc).
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row mt-50">
+      <div class="col text-center">
+        <!-- <button class="btn-main">ALL PROJECTS</button> -->
+        <a class="btn btn-main" href="/project">ALL PROJECTS</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

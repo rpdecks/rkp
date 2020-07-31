@@ -1,5 +1,5 @@
 ################################# Default configuration ###################
-baseURL = "https://robertkevinphillips.com"
+baseURL = "https://www.robertkevinphillips.com"
 title = "Robert Phillips Portfolio"
 theme = "airspace-hugo"
 # post pagination
@@ -55,7 +55,7 @@ logo = "images/logo.png"
 description = "This is meta description"
 author = "Themefisher"
 # Contact Information
-mobile = "678.662.8857"
+phone = "(678) 662-8857"
 email = "rpdecks@gmail.com"
 location = "Athens, Georgia"
 # contact form action
@@ -79,7 +79,7 @@ link = "contact"
 
 # google map
 [params.gmap]
-enable = true
+enable = false
 gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
 map_latitude = "51.5223477"
 map_longitude = "-0.1622023"
