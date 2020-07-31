@@ -1,7 +1,7 @@
 ################################## About #####################################
 about:
   enable : true
-  image : "images/company/about_rkp.png"
+  image : "images/company/about_rkp.jpg"
   title : "Industrial & Systems engineer turned <br/> full-stack web developer..."
   content : "After 8 years in the HVAC industry consulting with design engineers, contractors, and building owners, a deep inward turn led me to Bible school and into 10 years of collegiate ministry. I feel this has produced in me a unique blend of technical prowess and ability to work with very diverse groups of people from varying backgrounds both technical and cultural.  
   
@@ -16,71 +16,40 @@ about:
     label : "Download Resume"
     link : "https://www.robertkevinphillips.com/resume.pdf"
 
-  funfacts:
-    # funfacts loop
-    - icon : "ion-ios-flask-outline" #ionicon pack v2 : https://ionicons.com/v2/
-      name : "Completed Projects"
-      count : "349"
-      
-    # funfacts loop
-    - icon : "ion-ios-flame-outline" #ionicon pack v2 : https://ionicons.com/v2/
-      name : "Lines Of Code"
-      count : "35000"
-      
-    # funfacts loop
-    - icon : "ion-ios-pint-outline" #ionicon pack v2 : https://ionicons.com/v2/
-      name : "Satisfied Customer"
-      count : "70"
-      
-    # funfacts loop
-    - icon : "ion-ios-wineglass-outline" #ionicon pack v2 : https://ionicons.com/v2/
-      name : "Awards Winner"
-      count : "10"
-      
-    # funfacts loop
-    - icon : "ion-ios-chatboxes-outline" #ionicon pack v2 : https://ionicons.com/v2/
-      name : "Satisfied Customer"
-      count : "75"
-      
-    # funfacts loop
-    - icon : "ion-ios-body-outline" #ionicon pack v2 : https://ionicons.com/v2/
-      name : "Awards Winner"
-      count : "20"
-      
 ################################ feature #####################################
 features:
   enable : true
-  title : "We are indepented Design & Development Agency"
+  title : "Fun facts & Things I like to do"
   feature_item:
     # feature item loop
-    - icon : "ion-ios-color-filter-outline" #ionicon pack v2 : https://ionicons.com/v2/
-      name : "IOS App Development"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    - icon : "ion-coffee" #fontawesome icons
+      name : "Specialty Coffee"
+      content : "I have been roasting & serving my own specialty coffee since 2012. My favorite origins are Central and South American, especially Brazil. I built my first roaster by hand, and use a Behmor now."
       
     # feature item loop
-    - icon : "ion-ios-unlocked-outline" #ionicon pack v2 : https://ionicons.com/v2/
-      name : "App Secutity"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    - icon : "ion-android-boat"
+      name : "Fishing"
+      content : "I enjoy sport fishing of all types. I have saltwater fished for mackerel and salmon but my favorite pasttime is freshwater bass fishing. I have caught over a dozen species of fish in my lifetime."
       
     # feature item loop
-    - icon : "ion-ios-game-controller-b-outline" #ionicon pack v2 : https://ionicons.com/v2/
-      name : "Games Development"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    - icon : "ion-ios-paw" #ionicon pack v2 : https://ionicons.com/v2/
+      name : "Dog Training"
+      content : "I have read a dozen books on dog training and nearly entered into the profession. Instead I consult occassionally. My favorite breed is a Boston Terrier."
       
     # feature item loop
-    - icon : "ion-ios-mic-outline" #ionicon pack v2 : https://ionicons.com/v2/
-      name : "Animation and Editing"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    - icon : "ion-ios-flower-outline" #ionicon pack v2 : https://ionicons.com/v2/
+      name : "Lawn Care"
+      content : "As a hobby, I study turf management, focusing on lawn control, and weed management."
       
     # feature item loop
     - icon : "ion-ios-lightbulb-outline" #ionicon pack v2 : https://ionicons.com/v2/
-      name : "UI/UX Design"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+      name : "Spanish"
+      content : "Studied for years, very conversational, having served in a translational role in various group context locally and abroad."
       
     # feature item loop
     - icon : "ion-ios-star-outline" #ionicon pack v2 : https://ionicons.com/v2/
-      name : "Branding"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+      name : "Missionary"
+      content : "Involved in Christian ministry for 10 years, I have been around the world and served at length in collegiate ministry."
     
 
 #################################### testimonial & mission vision #######################################
@@ -92,39 +61,41 @@ mission_vision:
   enable : true
   tabs:
     # tab item loop
-    - name : "Vision"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore nobis ducimus facere repellat
-      harum, eius cupiditate, aliquam aut deserunt. Nemo illo ex impedit autem quod nobis architecto, velit
-      quasi, aut voluptas porro natus. Fuga magnam perspiciatis fugit, placeat possimus officia non ducimus
-      voluptatum aspernatur ad quidem neque accusantium repudiandae cupiditate nobis corporis, cum facere
-      iusto, modi cumque consectetur saepe. Officia, molestiae tempore! Consequatur ipsa consequuntur saepe
-      suscipit vero laudantium, mollitia, quaerat soluta nihil non tempore, quos dignissimos quasi ab officiis
-      illum numquam quibusdam ducimus, veritatis ad. Quia, aliquid. Quaerat quos ducimus ipsam amet minus
-      temporibus eos sequi alias hic nemo."
-      
-    # tab item loop
-    - name : "Mission"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore nobis ducimus facere repellat
-      harum, eius cupiditate, aliquam aut deserunt. Nemo illo ex impedit autem quod nobis architecto, velit
-      quasi, aut voluptas porro natus. Fuga magnam perspiciatis fugit, placeat possimus officia non ducimus
-      voluptatum aspernatur ad quidem neque accusantium repudiandae cupiditate nobis corporis, cum facere
-      iusto, modi cumque consectetur saepe. Officia, molestiae tempore! Consequatur ipsa consequuntur saepe
-      suscipit vero laudantium, mollitia, quaerat soluta nihil non tempore, quos dignissimos quasi ab officiis
-      illum numquam quibusdam ducimus, veritatis ad. Quia, aliquid. Quaerat quos ducimus ipsam amet minus
-      temporibus eos sequi alias hic nemo."
-      
-    # tab item loop
-    - name : "Approach"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore nobis ducimus facere repellat
-      harum, eius cupiditate, aliquam aut deserunt. Nemo illo ex impedit autem quod nobis architecto, velit
-      quasi, aut voluptas porro natus. Fuga magnam perspiciatis fugit, placeat possimus officia non ducimus
-      voluptatum aspernatur ad quidem neque accusantium repudiandae cupiditate nobis corporis, cum facere
-      iusto, modi cumque consectetur saepe. Officia, molestiae tempore! Consequatur ipsa consequuntur saepe
-      suscipit vero laudantium, mollitia, quaerat soluta nihil non tempore, quos dignissimos quasi ab officiis
-      illum numquam quibusdam ducimus, veritatis ad. Quia, aliquid. Quaerat quos ducimus ipsam amet minus
-      temporibus eos sequi alias hic nemo."
+    - name : "Work"
+      content : "## Work History:  
 
 
+      **Church in Athens/Atlanta** (2009-present)
+
+
+      **Full-Time Training** (Bible school 2007-2009)  
+
+
+      **The Trane Company** (2002-2007)  
+      
+      
+      I am a curious person and a very hard worker. I enjoy project work, especially the work of building. On the one hand, I love to work with my hands be it with cars or home renovation... on the other I am very interested in concepts and systems. I like to focus and deep dive on topics or projects, especially when inspired or motivated by the vision behind them.  
+
+
+      Many aspects of my work in Christian ministry have been related to vision and things I have seen and became passionate about. In the same way, the prospect of building a business did as a techincal sales engineer and account manager with the Trane Company (HVAC industry)."
+
+    # tab item loop
+    - name : "Faith"
+      content : "I am a Christian. I was raised in a Christian family and believed in Jesus Christ as a child. I wandered from the faith through much of adolescence and college years but experienced a deep and profound spiritual turn in my late twenties. While this is not a typical thing to include as a part of a professional portfolio, it is too much a part of my life and history to exclude.
+      
+
+      I spent a decade, perhaps the most promising years of a professional's career, serving in collegiate and church ministry work... a privilege for which I am eternally grateful. I remain strongly committed to the vision I have seen related to that and consider it a life priority. I serve in the church as a working professional now like many others.
+
+
+      I believe God loves all of humanity without limit and that he also desires to see all men saved and to come to the full knowledge of the truth, especially concerning Himself. That said, some may be concerned as to how such people will be as members of a team or in a diverse workplace. Those who have worked with me will testify, I never press anyone related to this or attempt to advance some sort of agenda related to this. As much as I am able, my hope is to represent the God I mention above and life an honorable life as a testimony among men."
+      
+    # tab item loop
+    - name : "Family"
+      content : "I am a happy husband and father of 3 children. I have two boys with a lovely girl sandwiched in between them. My wife works as a nurse practitioner and most importantly as a wonderful mother. I was born and raised in Georgia, a brother of 3, a cousin and relative to many. My family lives all over the US but my immediate family lives in the Atlanta area and around the southeast.
+      
+
+      I enjoy cutting grass and being outside with the children, getaways with my wife, and quiet evenings whenever they come my way."
+      
 ############################# call to action #################################
 cta:
   enable : true

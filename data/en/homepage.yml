@@ -95,22 +95,28 @@ funfacts:
 
   testimonial_slider:
     # testimonial item loop
-    - name : "Raymond Roy"
-      image : "images/clients/avater-1.jpg"
-      designation : "CEO-Themefisher"
-      content : "This Company created an e-commerce site with the tools to make our business a success, with innovative
-                ideas we feel that our site has unique elements that make us stand out from the crowd."
+    - name : "Philip"
+      image : "images/clients/philip.jpg"
+      designation : "CTO at Lenscomms, Inc"
+      content : 
+        # "Robert is a newcomer to software development; by training he is an engineer (a Ramblin Wreck from Georgia Tech, like me). I have known him for 15 years and have worked alongside him in many capacities.  
+
+        # As a lifelong developer myself, I told him many times, 'If you ever come into development work, you will do well.' Well, that prophecy is now ripening to fruition, and to put it mildly, I called it.  
+
+        "There are two types of people who graduate from software bootcamps.  
+        The first kind are those who feel like they have been given something, that they have acquired something. They immediately begin to search for jobs and roles that fit their newly acquired skillset.  
+        The second kind are those who realize that what they have been given is a set of keys to continually unlock new tools, languages, and approaches to building things. They don't feel like they have arrived; they feel that they are just beginning. The main thing they feel they have been given is the courage to figure things out. They know there is no such thing as magic, when you need to understand or master something, you just patiently grind through docs, stackoverflow, your community, and every other resource the internet has. The second kind has a very observable growth curve and is worth far more than the first kind.  
+        Robert is the second kind."
                 
     # testimonial item loop
-    - name : "Randi Renin"
-      image : "images/clients/avater-1.jpg"
-      designation : "CEO-Themefisher"
-      content : "This Company created an e-commerce site with the tools to make our business a success, with innovative
-                ideas we feel that our site has unique elements that make us stand out from the crowd."
+    - name : "Brandon"
+      image : "images/clients/brandon.png"
+      designation : "Full Stack Software Developer"
+      content : "Robert is always looking to learn something new or develop a new skill. As a software developer, curiosity and scrappiness are two highly desired traits, and Robert has both in spades. At Flatiron School, I had the pleasure of working with Robert on building a nurse dispatching web application from the ground up. Working together was truly a pleasure, as we were able to tackle many difficult problems including Mapbox API configuration and difficult frontend data flow. If you're looking for someone with intelligence, perseverance, and high work ethic, Robert would make a great addition to your team."
                 
-    # testimonial item loop
-    - name : "Rose Rio"
-      image : "images/clients/avater-3.jpg"
-      designation : "CEO-Themefisher"
-      content : "This Company created an e-commerce site with the tools to make our business a success, with innovative
-                ideas we feel that our site has unique elements that make us stand out from the crowd."
+    # # testimonial item loop
+    # - name : "Rose Rio"
+    #   image : "images/clients/avater-3.jpg"
+    #   designation : "CEO-Themefisher"
+    #   content : "This Company created an e-commerce site with the tools to make our business a success, with innovative
+    #             ideas we feel that our site has unique elements that make us stand out from the crowd."

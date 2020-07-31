@@ -22,6 +22,8 @@ link = "plugins/Ionicons/css/ionicons.min.css"
 [[params.plugins.css]]
 link = "plugins/devicons/css/devicons.css"
 [[params.plugins.css]]
+link = "plugins/fontawesome/css/all.css"
+[[params.plugins.css]]
 link = "plugins/magnific-popup/magnific-popup.css"
 [[params.plugins.css]]
 link = "plugins/slick/slick.css"

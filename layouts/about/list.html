@@ -19,7 +19,9 @@
         {{ .content | markdownify }}
         {{ if .button.enable }}
         {{ with .button }}
-        <a href="{{ .link | relURL }}" class="btn btn-small mt-20">{{ .label }}</a>
+        <div class="row" style="text-align: center;">
+          <a href="{{ .link | relURL }}" class="btn btn-small mt-20" style="text-align: center;">{{ .label }}</a>
+        </div>
         {{ end }}
         {{ end }}
       </div>
@@ -57,7 +59,7 @@
       {{ range .feature_item }}
       <div class="col-md-4">
         <div class="service-item">
-          <i class="{{ .icon }}"></i>
+          <i class="fas {{ .icon }}"></i>
           <h4>{{ .name | markdownify }}</h4>
           <p>{{ .content | markdownify }}</p>
         </div>
