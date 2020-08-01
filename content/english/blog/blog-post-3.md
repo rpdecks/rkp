@@ -23,16 +23,10 @@ type: "post"
 
 These two videos did a great job explaining an API in simple terms.  
 **What is an API?**  
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=s7wmiS2mSXY
-" target="_blank"><img src="http://img.youtube.com/vi/s7wmiS2mSXY/0.jpg" 
-alt="waiter image" width="240" height="180" border="10" /></a>
 [![waiter image](http://img.youtube.com/vi/s7wmiS2mSXY/0.jpg)](http://www.youtube.com/watch?v=s7wmiS2mSXY)
 
 
 **What Are APIs? — Simply Explained**  
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=OVvTv9Hy91Q
-" target="_blank"><img src="http://img.youtube.com/vi/OVvTv9Hy91Q/0.jpg" 
-alt="API image" width="240" height="180" border="10" /></a>
 [![API image](http://img.youtube.com/vi/OVvTv9Hy91Q/0.jpg)](http://www.youtube.com/watch?v=OVvTv9Hy91Q)
 
 I appreciate the comparison of the API to the waiter in a restaurant. On one end there is a kitchen handling and processing raw elements and on the other end, a consumer… well, consuming. The waiter (i.e. API) handles the interface between the two so that the consumer can get, meaningfully, what he/she wanted from the kitchen, without all the messy behind the curtain detail, procedure, and process. Watch the videos, they do much better than me explaining… and the pictures help a lot too.  
