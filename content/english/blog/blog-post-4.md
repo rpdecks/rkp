@@ -37,6 +37,7 @@ I found a number of guides out there to show you how to get started. The Mapbox 
 Using Mapbox markers
 
 ![map screenshot](static/images/blog/dispatch-map.png?raw=true "screenshot")
+![alt text](https://github.com/rpdecks/rkp/tree/master/static/images/blog/dispatch-map.png)
 
 Example code with comments:  
 ```
