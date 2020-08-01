@@ -36,4 +36,95 @@ We wanted to take a big list of home healthcare patients, plot them all on a map
 I found a number of guides out there to show you how to get started. The Mapbox docs are great for this too. I’ll leave links to a guide I found and a tutorial I watched to get set up and familiar with tool at the bottom.
 Using Mapbox markers
 
-![map screenshot](/static/images/blog/dispatch-map.png?raw=true "screenshot")
+![map screenshot](static/images/blog/dispatch-map.png?raw=true "screenshot")
+
+Example code with comments:  
+```
+  import React from 'react'
+  import ReactMapGL, { Marker, Popup } from 'react-map-gl';
+  import '../App.css';
+
+  const mapMarkers = (userData, setSelectedAppointments, setPopupState) => {
+    const nurses = mapNurses(userData.nurses, setSelectedAppointments, setPopupState) || [];
+    const patients = mapPatients(userData.patients, setSelectedAppointments, setPopupState) || [];
+    return nurses.concat(patients) || null;
+  }
+
+  const handleClick = (user, setSelectedAppointments, setPopupState) => {
+    setSelectedAppointments(user.id)
+    setPopupState(user) // put appt data into state to be displayed on popup's window
+  }
+
+  // const mapNurses = (nurses, setSelectedAppointments, setPopupState) => {
+  // } looks like mapPatients below...
+
+  const mapPatients = (patients, setSelectedAppointments, setPopupState) => {
+    if (patients) {
+      return patients.map(patient => {
+        return <Marker
+          key={patient.address}
+          latitude={patient.latitude}
+          longitude={patient.longitude}
+        >
+          <button className='marker-btn' onClick={() => handleClick(patient, setSelectedAppointments, setPopupState)}>
+            {/* get your own images to style your pins. nurses style != patient style */}
+            <img src='patient-pin.png' alt='patient-pin' />
+          </button>
+        </Marker>
+      })
+    }
+  }
+
+  const renderPopup = (stateObj, setPopupState, updateRenderedItem) => {
+
+    return (
+      stateObj && (
+        <Popup
+          className="popup"
+          tipSize={5}
+          anchor="top"
+          longitude={stateObj.longitude} // click on marker feeds lat/long to state which is passed
+          latitude={stateObj.latitude} // here as prop so popup shows up near the selected marker pin
+          closeOnClick={false}
+          onClose={() => setPopupState(null)}
+        >
+          <div>
+            <b>{ stateObj.name }</b><br />
+            { stateObj.address }<br />
+            <button onClick={() => {
+              updateRenderedItem('apptDetails') // change from map view to appt view
+              setPopupState(null) // reset state which effectively closes popup
+            }}>
+              Appt Details
+            </button >
+          </div>
+        </Popup>
+      )
+    );
+  }
+
+  const MapContainer = props => {
+    return <ReactMapGL
+      {...props.viewport}
+      mapboxApiAccessToken={props.mapboxApiAccessToken}
+      mapStyle='mapbox://styles/rpdecks/ckbczsigy1q5m1ilf2qhgsphi' // lots of map styles available, or customize your own
+      onViewportChange={props.handleViewportChange} // allows to drag map inside grid
+    >
+      {props.userData.user_type !== 'patient' && mapMarkers(props.userData, props.setSelectedAppointments, props.setPopupState)}
+      {/* this renders the marker popup based on popupState which is set by clicking on a marker. If you click, it pops up. If you close, state is wiped. */}
+      {renderPopup(props.popupState, props.setPopupState, props.updateRenderedItem)}
+    </ReactMapGL>
+  }
+
+  export default MapContainer;
+```
+## Impression?
+I like Mapbox a lot. Our first experience was very good. I found it easy to get started and use. A short video tutorial and we had our map up and running. Popups and markers were a breeze too.  
+
+Wins for devs?  
+
+**1. Docs:** extensive and well written  
+**2. Free!** Until you start generating a lot of traffic.  
+**3.** Lots of **tutorials** online with substantial user base  
+**4. Uber:** They’re smart and their package is powerful and improving on the regular (react-map-gl)  
+**5. Great looking** maps with plenty of options and customization ability
