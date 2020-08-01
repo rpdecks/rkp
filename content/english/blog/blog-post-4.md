@@ -36,7 +36,7 @@ We wanted to take a big list of home healthcare patients, plot them all on a map
 I found a number of guides out there to show you how to get started. The Mapbox docs are great for this too. I’ll leave links to a guide I found and a tutorial I watched to get set up and familiar with tool at the bottom.
 Using Mapbox markers
 
-![map screenshot](./dispatch-map.png "screenshot")
+![map screenshot](/dispatch-map.png "screenshot")
 
 Example code with comments:  
 ```
