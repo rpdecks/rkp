@@ -32,7 +32,7 @@ Pry, however, is another of these tools that is a Ruby gem. This basically means
 
 IRB is a sort of sandbox Ruby environment you can access at your command prompt wherein you can "play" with Ruby syntax, methods, variables, operations, etc. Pry is a tool that allows you to place a "wedge" inside your Ruby program that will interrupt that program and the place of your choosing. When it interrupts it, it also gives you the ability to step inside that program and see what's going on.  
 
-![engine](https://unsplash.com/photos/xFjti9rYILo "Engine")
+![engine](https://github.com/rpdecks/rkp/static/images/blog/engine.jpg?raw=true)
 # Storytime
 I come from a mechanical background. I have grown up working on cars, air conditioning systems, etc. Many times, when my car had a problem it made noises, smoked, smelled, vibrated, etc. These were all clues to me that something was wrong. What I always wished I could do was get inside the motor, or at least put a camera in there, so I could see what was rattling, clanging, etc. If I could do that, I felt I could have understood the problem and found the solution. In the absence of that, I often just started swapping out the parts until the problem went away. Sometimes I never understood what happened and I almost always replaced good parts while I guessed at a solution.  
 
