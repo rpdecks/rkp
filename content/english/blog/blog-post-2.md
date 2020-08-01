@@ -89,4 +89,4 @@ This is like a terminal mode inside vim you can use to do things like changes se
 This is like a command-line mode just mentioned but it remains open after entering a command until you exit the mode.
 
 
-<span>Photo by <a href="https://unsplash.com/@pjswinburn?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Philip Swinburn</a> on <a href="https://unsplash.com/s/photos/woodworking?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+Photo by [Philip Swinburn](https://unsplash.com/@pjswinburn?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/woodworking?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)

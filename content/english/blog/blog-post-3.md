@@ -117,4 +117,4 @@ One day, my users will upload their own. But for now, it’s pretty and paints a
 I hope this helps you. It was a great learning experience for me. On to the next.
 
 
-<span>Photo by <a href="https://unsplash.com/@baciutudor?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tudor Baciu</a> on <a href="https://unsplash.com/s/photos/coffee-code-computer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+Photo by [Tudor Baciu](https://unsplash.com/@baciutudor?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/coffee-code-computer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)

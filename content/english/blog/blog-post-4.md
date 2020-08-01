@@ -1,52 +1,39 @@
 ---
-title: "How To Wear Bright Shoes"
-date: 2018-09-24T11:07:10+06:00
-author: John Doe
+title: "Using Mapbox GL JS API with React"
+date: 2020-06-17T11:07:10+06:00
+author: Robert Phillips
 image : "images/blog/blog-post-4.jpg"
 bg_image: "images/featue-bg.jpg"
-categories: ["Legacy Support"]
-tags: ["Mechine","Retro"]
-description: "this is meta description"
+categories: ["Javascript"]
+tags: ["API","Javascript", "React"]
+description: "impression & experience first time using this API"
 draft: false
 type: "post"
 ---
 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vitae placeat ad architecto nostrum asperiores
-vel aperiam, veniam eum nulla. Maxime cum magnam, adipisci architecto quibusdam cumque veniam fugiat quae. Lorem
-ipsum dolor sit amet, consectetur adipisicing elit. Odio vitae ab doloremque accusamus sit, eos dolorum officiis
-a perspiciatis aliquid. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, facere. 
+For our first React map/routing project, my team decided to use the Mapbox GL API to display locations on a map of that a dispatcher needed to interact with to assign and plan work.  
 
-> Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes
-nemo minima rerums unsers sadips amets.. Sed ut perspiciatis unde omnis iste natus error
+**In this post I will:**  
+1. Briefly describe what Mapbox GL JSis and does
+2. Show a little example of how we used it
+3. Share my impression after this first use
+4. Helpful links
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum illo deserunt necessitatibus quibusdam sint,
-eos explicabo tenetur molestiae vero facere, aspernatur sit mollitia perferendis reiciendis. Deleniti magni
-explicabo sed alias fugit amet animi molestias ipsum maiores. Praesentium sint, id laborum quos. Tempora
-inventore est, dolor corporis quis doloremque nostrum, eos velit culpa quasi labore. Provident laborum porro
-nihil iste, magnam officia nemo praesentium autem, libero vel officiis. Omnis pariatur nam voluptatem voluptate
-at officia repellat ea beatae eligendi? Mollitia error saepe, aperiam facere. Optio maiores deleniti veritatis
-eaque commodi atque aperiam, debitis iste alias eligendi ut facilis earum! Impedit, tempore.
+## What is Mapbox GL?
+> “Mapbox GL JS is a JavaScript library that uses WebGL to render interactive maps from vector tiles and Mapbox styles. It is part of the Mapbox GL ecosystem, which includes Mapbox Mobile, a compatible renderer written in C++ with bindings for desktop and mobile platforms.”  
+see also: https://docs.mapbox.com/mapbox-gl-js/api/  
 
-```
-  .blog-classic {
-  margin-bottom: 70px;
-  padding-bottom: 70px;
-  border-bottom: 1px solid #efefef;
-  }
-```
+Basically, this is a tool we can use to put a very interactive map interface into our webpage which we are all so familiar with these days (think Uber, Google Maps, Waze, etc).  
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex error esse a dolore, architecto sapiente, aliquid
-commodi, laudantium eius nemo enim. Enim, fugit voluptatem rem molestiae. Sed totam quis accusantium iste
-nesciunt id exercitationem cumque repudiandae voluptas perspiciatis, consequatur quasi, molestias, culpa odio
-adipisci. Nesciunt optio fugiat iste quam modi, ex vitae odio pariatur! Corrupti explicabo at harum qui
-doloribus, sit dicta nemo, dolor, enim eum molestias fugiat obcaecati autem eligendi? Nisi delectus eaque
-architecto voluptatibus, unde sit minus quae quod eligendi soluta recusandae doloribus, officia, veritatis
-voluptatum eius aliquam quos. Consectetur, nisi? Veritatis totam, unde nostrum exercitationem tempora suscipit,
-molestias, deserunt ipsum laborum aut iste eaque? Vitae delectus dicta maxime non mollitia? Sapiente eos a quia
-eligendi deserunt repudiandae modi molestias tenetur autem pariatur ullam itaque, quas eveniet, illo quam rerum
-ex obcaecati voluptatum nesciunt incidunt culpa provident illum soluta. Voluptas possimus nesciunt inventore
-perspiciatis neque fugiat, magnam natus repellendus praesentium eum voluptatum, alias incidunt, tempora
-reprehenderit recusandae et numquam itaque ratione dolor voluptatibus in commodi ut! Neque deserunt nostrum
-commodi dolor natus quo, non vitae deleniti, vero voluptatem error aspernatur veniam expedita numquam amet quia
-in dolores velit esse molestiae! Iusto architecto accusantium quisquam recusandae quod vero quia.
+Speaking of Uber, their super smart engineers developed a package for using Mapbox with React (the Javascript framework we used to build the front end of our project). That package is react-map-gl. All the heavy lifting of graphics, mapping, routing, calculating, etc is done by this API and this library. This package brought in the maps, markers, popups, event and screen controls, all the user interactions you need, layers, geolocation, and much more.  
+
+For the Rails backed we used a great Ruby gem named mapbox-sdk with had some awesome geolocation logic for resolving locations, even those with partial information (ie the name of a park, etc).  
+
+## Our project
+We wanted to take a big list of home healthcare patients, plot them all on a map, and then use that graphical view to more intelligently make nurse assignments based on geography, plan routes, etc. Furthermore, we wanted to be able to filter views of that map, interact with map pins, assign nurses, delete appointments. For this, we married a Rails backend with a Javascript front end using styled Material UI React components.  
+
+I found a number of guides out there to show you how to get started. The Mapbox docs are great for this too. I’ll leave links to a guide I found and a tutorial I watched to get set up and familiar with tool at the bottom.
+Using Mapbox markers
+
+![map screenshot](/static/images/blog/dispatch-map.png?raw=true "screenshot")
