@@ -125,6 +125,6 @@ Wins for devs?
 
 **1. Docs:** extensive and well written  
 **2. Free!** Until you start generating a lot of traffic.  
-**3.** Lots of **tutorials** online with substantial user base  
+**3. Tutorials** lots of them online because of substantial user base  
 **4. Uber:** They’re smart and their package is powerful and improving on the regular (react-map-gl)  
 **5. Great looking** maps with plenty of options and customization ability
