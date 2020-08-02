@@ -38,6 +38,7 @@ Using Mapbox markers
 
 ![map screenshot](/static/images/blog/dispatch-map.png)
 <img src="/images/blog/dispatch-map.png" alt="map screenshot"/>
+[![map screenshot](/static/images/blog/dispatch-map.png)](/static/images/blog/dispatch-map.png)
 
 Example code with comments:  
 ```
