@@ -2,8 +2,8 @@
 title: "Using Mapbox GL JS API with React"
 date: 2020-06-17T11:07:10+06:00
 author: Robert Phillips
-image : "images/blog/blog-post-4.jpg"
-bg_image: "images/featue-bg.jpg"
+image : "images/blog/map-pins.png"
+bg_image: "images/blog/map-pins.png"
 categories: ["Javascript"]
 tags: ["API","Javascript", "React"]
 description: "impression & experience first time using this API"
