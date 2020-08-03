@@ -2,8 +2,8 @@
 title: "Using Mapbox GL JS API with React"
 date: 2020-06-17T11:07:10+06:00
 author: Robert Phillips
-image : "images/blog/map-pins.png"
-bg_image: "images/blog/map-pins.png"
+image : "images/blog/map-pins.jpg"
+bg_image: "images/blog/map-pins.jpg"
 categories: ["Javascript"]
 tags: ["API","Javascript", "React"]
 description: "impression & experience first time using this API"
@@ -128,3 +128,5 @@ Wins for devs?
 **3. Tutorials** lots of them online because of substantial user base  
 **4. Uber:** They’re smart and their package is powerful and improving on the regular (react-map-gl)  
 **5. Great looking** maps with plenty of options and customization ability
+
+Photo by [Thor Alvis](https://unsplash.com/@terminath0r?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/map?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
