@@ -11,9 +11,10 @@ draft: false/
 type: "post"
 ---
 
+Photo by [George Coletrain](https://unsplash.com/@georgecoletrain?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/static?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
 ## What are 'Static Site Generators' (SSG's), what are their pros and cons, and when should we use them?
 
-When building my own personal portfolio website, I chose to lean into static site generators and learn something new. The personal portfolio is an excellent use case for a Hugo site hosted somewhere like Netlify, and that is just what I did with [robertkevinphillips.com](https://robertkevinphillips.com).
+When building my own personal portfolio website, I chose to lean into static site generators and learn something new. The personal portfolio is an excellent use case for a Hugo site hosted somewhere like Netlify, and that is just what I did with my site <a href="robertkevinphillips.com" target="_blank">RobertKevinPhillips.com</a>
 
 ### In this post I will:
 1. Explain what SSG's are
@@ -29,7 +30,7 @@ Static site generators essentially take static content (files, folders) and buil
 
 ## Advantages of the SSG
 ### **Speed**  
-- **53% of retail consumers will abadondon a website if it takes longer than 3 seconds to load** ([Article](https://www.marketingdive.com/news/google-53-of-mobile-users-abandon-sites-that-take-over-3-seconds-to-load/426070/)).  
+- **53% of retail consumers will abadondon a website if it takes longer than 3 seconds to load** <a href='https://www.marketingdive.com/news/google-53-of-mobile-users-abandon-sites-that-take-over-3-seconds-to-load/426070/' target='_blank')Article</a>
 - SSG's already have all the content locked, loaded, and ready to fire upon request while CMS type sites must run network requests to fetch data from API's. News sites need to scour the internet for new stories. The app needs to also query the database and construct content in aforementioned ways.  
 - **How?** The work of building is shifted away from time of request. This means the server only has to find and serve a file, perhaps in mass. There is no way to beat this in terms of speed.
 - **CDN's** - Content delivery networks drastically optimize performance and user experience. How? They are geographically distributed group of servers which work together to provide fast delivery of internet content. Content is cached on servers around the globe and served to users from the closest one when requested.
@@ -40,7 +41,7 @@ Static site generators essentially take static content (files, folders) and buil
 - **Cached content** - Makes it easier to scale up vs integreted CMS systems with dependent logic like apps with communicating front and back ends.
 
 ### **Relability**  
-- **Less moving parts** means less things to break. [Think CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) 
+- **Less moving parts** means less things to break. <a href='https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS' target='_blank'>Think CORS</a>  
 
 ### **Security**  
 - Since SSG's are rendered in advance, this leaves much less avenues for cyber attack. Data flowing from a front end to a back end database is much more exposed to intercept and attack from things like database injections that lead to breaches and compromises.
@@ -67,10 +68,10 @@ Static site generators essentially take static content (files, folders) and buil
     * Javascript? (Next.js, Gatsby...) 
     * Go? (Hugo)
     * Pyton? (Pelican, MkDocs...)
-    * etc... see [StaticGen](https://www.staticgen.com/)
+    * etc... see <a href='www.staticgen.com' target='_blank'>StaticGen</a>
 
 ### **Flexibility**  
-- Enter [JAMstack](https://jamstack.org/): 
+- Enter <a href='jamstack.org' target='_blank'>JAMstack</a>  
     * Modern web development architecture based on client-side JavaScript, APIs and Markup (JAM)
     * Add JS to your site and fetch data from other API's real time to get some of the benefits of a dynamic CMS without the backend db (example: pull weather data, etc to effectively build your own, safer widgets).
 
@@ -81,22 +82,20 @@ Static site generators essentially take static content (files, folders) and buil
 1. Can grow stale faster: Dynamic sites keep living and breathing while static sites need new content being pushed. That said, many kinds of sites are informational and non-changing and thus remain more relevant and fresh given that nature.
 
 ## Prominent names built on [Hugo](https://gohugo.io/)
-1. [Netlify](https://netlify.com)
-1. [1Password password manager](https://1password.com/)
-1. [Bed Bath Beyond video subdomain](https://video.bedbathandbeyond.com/)
-1. [Advance Auto Parts video subdomain](https://video.advanceautoparts.com/)
+1. <a href='https://netlify.com' target='_blank'>Netlify<a/>
+1. <a href='https://1password.com/' target='_blank'>1Password password manager<a/>
+1. <a href='https://video.bedbathandbeyond.com/' target='_blank'>Bed Bath Beyond video subdomain<a/>
+1. <a href='https://video.advanceautoparts.com/' target='_blank'>Advance Auto Parts video subdomain<a/>
 
 ## Prominent names built on [Next.js](https://nextjs.org/showcase)
-1. [Nike](https://devices.netflix.com/en/)
-1. [Staples](https://m.staples.com)
-1. [Hulu](https://hulu.com)
-1. [Twitch](https://m.twitch.tv)
-1. [TikTok](https://tiktok.com/en/)
+1. <a href='https://devices.netflix.com/en/' target='_blank'>Nike<a/>
+1. <a href='https://m.staples.com' target='_blank'>Staples<a/>
+1. <a href='https://hulu.com' target='_blank'>Hulu<a/>
+1. <a href='https://m.twitch.tv' target='_blank'>Twitch<a/>
+1. <a href='https://tiktok.com/en/' target='_blank'>TikTok<a/>
 
 ## Prominent names built on [Jekyll](https://jekyllrb.com/showcase/)
-1. [Netflix Devices](https://devices.netflix.com/en/)
-1. [Spotify Developer page](https://developer.spotify.com/)
-1. [Bitcoin](https://bitcoin.org/en/)
-1. [Ruby on Rails](https://rubyonrails.org/)
-
-Photo by [George Coletrain](https://unsplash.com/@georgecoletrain?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/static?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+1. <a href='https://devices.netflix.com/en/' target='_blank'>Netflix Devices<a/>
+1. <a href='https://developer.spotify.com/' target='_blank'>Spotify Developer page<a/>
+1. <a href='https://bitcoin.org/en/' target='_blank'>Bitcoin<a/>
+1. <a href='https://rubyonrails.org/' target='_blank'>Ruby on Rails<a/>
