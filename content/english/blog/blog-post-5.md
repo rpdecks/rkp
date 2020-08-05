@@ -7,11 +7,11 @@ bg_image: "images/blog/static.jpg"
 categories: ["Code"]
 tags: ["Hugo","SSG"]
 description: "pro's and con's of static site generators"
-draft: false
+draft: false/
 type: "post"
 ---
 
-## What are 'Static Site Generators' (SSG's), what are their pro's and cons, and when should we use them?
+## What are 'Static Site Generators' (SSG's), what are their pros and cons, and when should we use them?
 
 When building my own personal portfolio website, I chose to lean into static site generators and learn something new. The personal portfolio is an excellent use case for a Hugo site hosted somewhere like Netlify, and that is just what I did with [robertkevinphillips.com](https://robertkevinphillips.com).
 
@@ -29,7 +29,7 @@ Static site generators essentially take static content (files, folders) and buil
 
 ## Advantages of the SSG
 ### **Speed**  
-- **53% of retail consumers will abadondon a website if it takes longer than 3 seconds to load** ([Research](https://www.marketingdive.com/news/google-53-of-mobile-users-abandon-sites-that-take-over-3-seconds-to-load/426070/)).  
+- **53% of retail consumers will abadondon a website if it takes longer than 3 seconds to load** ([Article](https://www.marketingdive.com/news/google-53-of-mobile-users-abandon-sites-that-take-over-3-seconds-to-load/426070/)).  
 - SSG's already have all the content locked, loaded, and ready to fire upon request while CMS type sites must run network requests to fetch data from API's. News sites need to scour the internet for new stories. The app needs to also query the database and construct content in aforementioned ways.  
 - **How?** The work of building is shifted away from time of request. This means the server only has to find and serve a file, perhaps in mass. There is no way to beat this in terms of speed.
 - **CDN's** - Content delivery networks drastically optimize performance and user experience. How? They are geographically distributed group of servers which work together to provide fast delivery of internet content. Content is cached on servers around the globe and served to users from the closest one when requested.
