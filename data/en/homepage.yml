@@ -4,9 +4,9 @@ banner:
   bg_image : "images/davecito.png"
   bg_overlay : true
   title : "Full-Stack Web Developer"
-  content : "I love overcoming challenges with technology and tenacity.
-
-            I enjoy being on a team and am passionate about educating and inspiring others."
+  content : "I love overcoming challenges with technology and tenacity.  
+  
+  I enjoy being on a team and am passionate about educating and inspiring others."
   button:
     enable : false
     label : "Projects"
@@ -107,16 +107,26 @@ funfacts:
         The first kind are those who feel like they have been given something, that they have acquired something. They immediately begin to search for jobs and roles that fit their newly acquired skillset.  
         The second kind are those who realize that what they have been given is a set of keys to continually unlock new tools, languages, and approaches to building things. They don't feel like they have arrived; they feel that they are just beginning. The main thing they feel they have been given is the courage to figure things out. They know there is no such thing as magic, when you need to understand or master something, you just patiently grind through docs, stackoverflow, your community, and every other resource the internet has. The second kind has a very observable growth curve and is worth far more than the first kind.  
         Robert is the second kind."
-                
+
     # testimonial item loop
     - name : "Brandon"
       image : "images/clients/brandon.png"
       designation : "Full Stack Software Developer"
       content : "Robert is always looking to learn something new or develop a new skill. As a software developer, curiosity and scrappiness are two highly desired traits, and Robert has both in spades. At Flatiron School, I had the pleasure of working with Robert on building a nurse dispatching web application from the ground up. Working together was truly a pleasure, as we were able to tackle many difficult problems including Mapbox API configuration and difficult frontend data flow. If you're looking for someone with intelligence, perseverance, and high work ethic, Robert would make a great addition to your team."
                 
-    # # testimonial item loop
-    # - name : "Rose Rio"
-    #   image : "images/clients/avater-3.jpg"
-    #   designation : "CEO-Themefisher"
-    #   content : "This Company created an e-commerce site with the tools to make our business a success, with innovative
-    #             ideas we feel that our site has unique elements that make us stand out from the crowd."
+    # testimonial item loop
+    - name : "Zach"
+      image : "images/clients/zach.jpeg"
+      designation : "MAcc Student at the University of Georgia"
+      content : "I had the pleasure of working with Robert for four years while interning at Christian Students at UGA during my time in college. He's a great leader and I would consider him my mentor in many aspects of my life.  
+      
+
+      He's a big-picture thinker, helping me see beyond the day to day. But he also knows how to get into the details of his work in order to solve a problem. Overall, he would be a great asset to any organization, and I would gladly work with him again in the future."
+
+    - name : "Fabrice"
+      image : "images/clients/fabrice.jpeg"
+      designation : "Mechanical Engineering Graduate EIT"
+      content : "I worked with Robert for over four years as an intern for Christian Students at UGA. I'm very grateful to have had him as a mentor and a leader on the team.  
+      
+      
+      He knows how to push people in a positive way. In many ways and through much practical coaching, he helped me step out of my comfort zone and grow. He is honest, frank and very understanding, qualities I find made it easy and a great pleasure to work with him."

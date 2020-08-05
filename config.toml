@@ -16,11 +16,11 @@ disableLanguages = ["Fr"]
 
 # CSS Plugins
 [[params.plugins.css]]
-link = "plugins/bootstrap/bootstrap.min.css"
+link = "plugins/bootstrap/bootstrap.min.css"    
 [[params.plugins.css]]
 link = "plugins/Ionicons/css/ionicons.min.css"
 [[params.plugins.css]]
-link = "plugins/devicons/css/devicons.css"
+link = "plugins/devicons/css/devicons.min.css"
 [[params.plugins.css]]
 link = "plugins/fontawesome/css/all.css"
 [[params.plugins.css]]

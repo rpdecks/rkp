@@ -1,0 +1,74 @@
+
+
+CMS weaknesses
+  1. vulnerable to attack
+  1. more difficult to maintain (front end, back end, build times to deploy, etc)
+  1. can be slow/cumbersome
+  1. scalability issues
+  1. wordpress example
+
+SSG pros:
+
+  1. speed
+    built sites already, HTML response fast compared to CMS on demand build/respond. shifts build work away from time of request
+    leveraging CDN's and cached versions of the site, can be delivered optimally from closer locations in the network
+  1. all the web server needs to do is return a file – not construct a page to be displayed for every HTTP request sent by each client.
+  1. scalable
+    CDN's, serverless
+    simplified hosting (removing servers, databases, layers of required logic)
+    cached versions of site basically
+  1. relability (less moving parts)
+  1. security
+    rendered in advance, very few vectors for cyber attack
+    There is no server more secure than the one that does not exist.
+  1. efficiency
+  1. ease of maintenance
+  1. templates & partials
+  1. available utilizing many languagues (Jekyll - Ruby, Hugo -Go, Next - Javascript..)
+  1. simplicity
+      easier to debug
+  1. host anywhere (github, Amazon S3, Dropbox etc)
+  1. version control (built in site back up)S
+  1. cost (free on Netlify until you hit 
+  1. flexibility
+     JAMstack, which is a modern web development architecture based on client-side JavaScript, APIs and Markup (JAM).
+
+
+SSG cons:
+1. higher bar for non-programmers to use
+1. no admin panel/area to interface with and manage content
+1. no editor for content creation (perhaps you need certain local tools/environment set up to edit site)
+1. few plugins (WP has over 55k)
+1. less themes available (for now...)
+1. smaller community, perhaps poorer documentation than WP
+https://www.strattic.com/jekyll-hugo-wordpress-pros-cons-static-site-generators/#:~:text=Because%20static%20sites%20are%20pre,files%20to%20your%20live%20server.O
+
+
+
+Content:
+
+"First – What Is a Static Site?
+Websites can be generally divided into two categories – static and dynamic. A static website is much like it sounds – static, fixed, constant. That is to say that it is designed, stored on a server, and delivered to the user’s web browser as-is. It doesn’t change between the point when the developer hits the “save” button, and when the end user clicks on it. Developers create the content using HTML, format it with CSS, and upload the static page to a server where it remains unchanged and ready to be accessed by a browser request.
+
+Dynamic websites, on the other hand, are in an almost constant state of change, and typically powered by a CMS. The CMS quite literally builds each page on-demand each time a user clicks on it. Developers create content that’s stored in a back-end database. When a user requests a URL, the CMS-driven website fetches the appropriate content from the database, loads an HTML template, renders the content within the template, and returns a formatted HTML page to the visitor’s browser – a process known as server-side processing."
+
+A static site generator is essentially a set of tools for building static websites based on a set of input files. They are publishing tools, not unlike things like Adobe Acrobat, which takes an editable format such as a Microsoft Word file and converts it into a format that’s easy to consume, such as .PDF.  With SSGs, developers create a static site that consists mainly of a series of HTML pages which are deployed to a HTTP server. In this sense, there are only files and folders, meaning no database, and no server-side rendering. When setting up a server, developers take the static site created by the static site generator and deploy it to the server. When a user requests a page, the server simply finds the matching file and sends it back to the user.
+
+https://www.netguru.com/blog/what-are-static-site-generators
+
+
+
+
+Why you should use?
+ 1. 40% of customers leaves if site takes more than 3 sec to load 
+
+
+
+Why you should NOT use
+
+
+
+
+
+
+
