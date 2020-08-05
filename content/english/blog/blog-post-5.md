@@ -16,8 +16,6 @@ Photo by [George Coletrain](https://unsplash.com/@georgecoletrain?utm_source=uns
 
 When building my own personal portfolio website, I chose to lean into static site generators and learn something new. The personal portfolio is an excellent use case for a Hugo site hosted somewhere like Netlify, and that is just what I did with [RobertKevinPhillips.com](https://robertkevinphillips.com).
 
-Testing here <a href="https://robertkevinphillips.com" target="_blank">RobertKevinPhillips.com</a>
-
 ### In this post I will:
 1. Explain what SSG's are
 1. Cover pros & cons
