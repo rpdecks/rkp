@@ -1,5 +1,5 @@
 ---
-title: "Static Site Generators Pros, Cons, & Suprises"
+title: "Static Site Generators Pros, Cons, & Surprises"
 date: 2020-08-04T08:58:52-04:00
 author: Robert Phillips
 image : "images/blog/static.jpg"
@@ -12,14 +12,14 @@ type: "post"
 ---
 Photo by [George Coletrain](https://unsplash.com/@georgecoletrain?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/static?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
 
-## What are 'Static Site Generators' (SSG's), what are their pros and cons, and when should we use them?
+## What are 'Static Site Generators' (SSG's), what are the pros and cons, and when should we use them?
 
 When building my own personal portfolio website, I chose to lean into static site generators and learn something new. The personal portfolio is an excellent use case for a Hugo site hosted somewhere like Netlify, and that is just what I did with [RobertKevinPhillips.com](https://robertkevinphillips.com).
 
 ### In this post I will:
 1. Explain what SSG's are
 1. Cover pros & cons
-1. List some popular SSG sites that may suprise you
+1. List some popular SSG sites that may surprise you
 
 ## What are Static Site Generators (SSG's)?
 The name here tells us a lot. The implication, obvious, that some sites are static while others are dynamic. In the case of static, think fixed or constant content. This means that, just like creating a Word document and clicking save, developers create HTML content for a whole website (perhaps many pages thereof) and save that version of the content. They then upload all of this content server where it can be delivered upon request to browsers, and quite well by the way. More on that later...
@@ -30,17 +30,17 @@ Static site generators essentially take static content (files, folders) and buil
 
 ## Advantages of the SSG
 ### **Speed**  
-- **53% of retail consumers will abadondon a website if it takes longer than 3 seconds to load** ([Article](https://www.marketingdive.com/news/google-53-of-mobile-users-abandon-sites-that-take-over-3-seconds-to-load/426070/)).  
+- **53% of retail consumers will abandon a website if it takes longer than 3 seconds to load** ([Article](https://www.marketingdive.com/news/google-53-of-mobile-users-abandon-sites-that-take-over-3-seconds-to-load/426070/)).  
 - SSG's already have all the content locked, loaded, and ready to fire upon request while CMS type sites must run network requests to fetch data from API's. News sites need to scour the internet for new stories. The app needs to also query the database and construct content in aforementioned ways.  
 - **How?** The work of building is shifted away from time of request. This means the server only has to find and serve a file, perhaps in mass. There is no way to beat this in terms of speed.
 - **CDN's** - Content delivery networks drastically optimize performance and user experience. How? They are geographically distributed group of servers which work together to provide fast delivery of internet content. Content is cached on servers around the globe and served to users from the closest one when requested.
 
 ### **Scalable**   
 - **CDN's again** - With cached versions of your site all around the globe, sites can scale up fast and handle giant volumes of traffic at once.
-- **Simplified hosting** - Serverless in the sense of removing databases and layers of server side logic built around controlling/routing/building that content.
-- **Cached content** - Makes it easier to scale up vs integreted CMS systems with dependent logic like apps with communicating front and back ends.
+- **Simplified hosting** - "Serverless" in the sense of removing databases and layers of server side logic built around controlling/routing/building that content.
+- **Cached content** - Makes it easier to scale up vs integrated CMS systems with dependent logic like apps with communicating front and back ends.
 
-### **Relability**  
+### **Reliability**  
 - **Less moving parts** means less things to break. [Think CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) 
 
 ### **Security**  
@@ -62,7 +62,7 @@ Static site generators essentially take static content (files, folders) and buil
 - Faster, easier updates (think git push heroku master, wait, then db:migrate, then db:seed, etc...)
 - Edit content offline and push later
 
-### **Pick your langauge**   
+### **Pick your language**   
 - Available utilizing many programming languagues
     * Ruby? (Jekyll, Slate...)
     * Javascript? (Next.js, Gatsby...) 
@@ -77,25 +77,28 @@ Static site generators essentially take static content (files, folders) and buil
 
 ## Drawbacks of the SSG
 1. Cannot handle highly complex systems that need to be dynamic (i.e. they live and breathe based on real, evolving data like Twitter, FB, Instagram etc.) If your site needs to have forms, create profiles, save records, involve commenting, messaging, reviews, etc. These kinds of sites really need a more traditional dynamic configuration with a database.
-1. No user interface for site management: WordPress for example has an admin panel where less technical users can make changes to the website without knowing how to code, write in markdown, etc.
-1. WordPress market share: there MANY more WP themes out there, lots of online support from a large user base, and WP the most likely to be around for the long haul in some form.
-1. Can grow stale faster: Dynamic sites keep living and breathing while static sites need new content being pushed. That said, many kinds of sites are informational and non-changing and thus remain more relevant and fresh given that nature.
+1. **No user interface for site management –** WordPress for example has an admin panel where less technical users can make changes to the website without knowing how to code, write in markdown, etc.
+1. **WordPress market share –** there MANY more WP themes out there, lots of online support from a large user base, and WP the most likely to be around for the long haul in some form.
+1. **Can grow stale faster –** Dynamic sites keep living and breathing while static sites need new content being pushed. That said, many kinds of sites are informational and non-changing and thus remain more relevant and fresh given that nature.
 
-## Prominent names built on [Hugo](https://gohugo.io/)
+## Prominent sites built on [Hugo](https://gohugo.io/)
 1. [Netlify](https://netlify.com)
 1. [1Password password manager](https://1password.com/)
 1. [Bed Bath Beyond video subdomain](https://video.bedbathandbeyond.com/)
 1. [Advance Auto Parts video subdomain](https://video.advanceautoparts.com/)
 
-## Prominent names built on [Next.js](https://nextjs.org/showcase)
-1. [Nike](https://devices.netflix.com/en/)
+## Prominent sites built on [Next.js](https://nextjs.org/showcase)
+1. [Nike](https://www.nike.com/help)
 1. [Staples](https://m.staples.com)
 1. [Hulu](https://hulu.com)
 1. [Twitch](https://m.twitch.tv)
 1. [TikTok](https://tiktok.com/en/)
 
-## Prominent names built on [Jekyll](https://jekyllrb.com/showcase/)
+## Prominent sites built on [Jekyll](https://jekyllrb.com/showcase/)
 1. [Netflix Devices](https://devices.netflix.com/en/)
 1. [Spotify Developer page](https://developer.spotify.com/)
 1. [Bitcoin](https://bitcoin.org/en/)
 1. [Ruby on Rails](https://rubyonrails.org/)
+
+Read this post on [ Medium ](https://medium.com/@rpthings/static-site-generators-pros-cons-surprises-1da7dcb140e0?source=friends_link&sk=a2d2792f222f1794faa96293b8170576)
+Read this post on [ LinkedIn ](https://www.linkedin.com/pulse/static-site-generators-pros-cons-surprises-robert-phillips)
