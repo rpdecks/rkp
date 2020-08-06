@@ -10,6 +10,7 @@ description: "impression & experience first time using this API"
 draft: false
 type: "post"
 ---
+Photo by [Thor Alvis](https://unsplash.com/@terminath0r?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/map?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
 
 
 For our first React map/routing project, my team decided to use the Mapbox GL API to display locations on a map of that a dispatcher needed to interact with to assign and plan work.  
@@ -22,7 +23,7 @@ For our first React map/routing project, my team decided to use the Mapbox GL AP
 
 ## What is Mapbox GL?
 > “Mapbox GL JS is a JavaScript library that uses WebGL to render interactive maps from vector tiles and Mapbox styles. It is part of the Mapbox GL ecosystem, which includes Mapbox Mobile, a compatible renderer written in C++ with bindings for desktop and mobile platforms.”  
-see also: https://docs.mapbox.com/mapbox-gl-js/api/  
+see also: [Mapbox GL Javascript API](https://docs.mapbox.com/mapbox-gl-js/api/)  
 
 Basically, this is a tool we can use to put a very interactive map interface into our webpage which we are all so familiar with these days (think Uber, Google Maps, Waze, etc).  
 
@@ -128,5 +129,3 @@ Wins for devs?
 **3. Tutorials** lots of them online because of substantial user base  
 **4. Uber:** They’re smart and their package is powerful and improving on the regular (react-map-gl)  
 **5. Great looking** maps with plenty of options and customization ability
-
-Photo by [Thor Alvis](https://unsplash.com/@terminath0r?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/map?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)

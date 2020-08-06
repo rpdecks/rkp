@@ -5,7 +5,7 @@ author: Robert Phillips
 image : "images/blog/static.jpg"
 bg_image: "images/blog/static.jpg"
 categories: ["Code"]
-tags: ["Hugo","SSG"]
+tags: ["Hugo","Static Site Generators"]
 description: "pro's and con's of static site generators"
 draft: false/
 type: "post"
