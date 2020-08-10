@@ -67,7 +67,7 @@ Static site generators essentially take static content (files, folders) and buil
     * Ruby? (Jekyll, Slate...)
     * Javascript? (Next.js, Gatsby...) 
     * Go? (Hugo)
-    * Pyton? (Pelican, MkDocs...)
+    * Python? (Pelican, MkDocs...)
     * etc... see [StaticGen](https://www.staticgen.com/)
 
 ### **Flexibility**  

@@ -110,6 +110,15 @@ funfacts:
         Robert is the second kind."
 
     # testimonial item loop
+    - name : "Brad"
+      image : "images/clients/brad.jpg"
+      designation : "Elder of Church in Athens"
+      content : "Robert worked for The Church in Athens, Inc. for the past 7 years. During that time, he has been a self-starter and a productive contributor to team efforts. In addition to having a high degree of integrity and a friendly personality, he is one of those rare individuals who can both follow instructions and take initiative, as appropriate. He is strong in time management and his competence extends beyond the skills for which he was originally hired.  
+      
+      
+      Robert managed five individuals on a campus outreach team at the University of Georgia. Daily he would lead a strategic discussion with his team to evaluative and focus their labor. Robert also joined team efforts to carry out multiple, weekly campus related gatherings with up to 30 UGA students in each. The ease with which he collaborates with others helped these gatherings run smoothly and efficiently. Robert also helped spearhead three regional conferences held annually. These were very large conferences with up to 200 participants in each. His meticulous attention to detail left nothing to chance and ensured that every need of the conference was met in full. In addition, all the students Robert mentored over the years were much appreciative of the genuine concern and shepherding care they received from him."
+
+    # testimonial item loop
     - name : "Brandon"
       image : "images/clients/brandon.png"
       designation : "Full Stack Software Developer"
@@ -124,7 +133,8 @@ funfacts:
 
       He's a big-picture thinker, helping me see beyond the day to day. But he also knows how to get into the details of his work in order to solve a problem. Overall, he would be a great asset to any organization, and I would gladly work with him again in the future."
 
-    - name : "Fabrice"
+    # testimonial item loop
+    - name : "Fabrice" 
       image : "images/clients/fabrice.jpeg"
       designation : "Mechanical Engineering Graduate EIT"
       content : "I worked with Robert for over four years as an intern for Christian Students at UGA. I'm very grateful to have had him as a mentor and a leader on the team.  
