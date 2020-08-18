@@ -7,7 +7,7 @@ bg_image: "images/blog/static.jpg"
 categories: ["Code"]
 tags: ["Hugo","Static Site Generators"]
 description: "pro's and con's of static site generators"
-draft: false/
+draft: false
 type: "post"
 ---
 Photo by [George Coletrain](https://unsplash.com/@georgecoletrain?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/static?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
