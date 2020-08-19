@@ -19,8 +19,7 @@ I am linking the most helpful resources, articles, etc. I found below. Those are
 This post assumes the reader is also learning Javascript and is familiar with Redux already. I’ll talk briefly about what Redux is but will mostly jump into how Thunk extends it, what the use case is for Thunk, and give an example use case for it and how I set it up.
 
 ## What is Redux and What It Does for Us?
-> “Redux was created by [Dan Abramov](https://github.com/gaearon) for a [ talk ](https://www.youtube.com/watch?v=xsSnOQynTHs). It is a “state container” inspired by the unidirectional [ Flux ](http://facebook.github.io/flux/) data flow and functional [ Elm ](https://github.com/evancz/elm-architecture-tutorial/) architecture. It provides a predictable approach to managing state that benefits from immutability, keeps business logic contained, acts as the single source of truth, and has a very small API.”  
-> --[Gabriel Lebec](https://medium.com/fullstack-academy/thunks-in-redux-the-basics-85e538a3fe60)
+> “Redux was created by [Dan Abramov](https://github.com/gaearon) for a [ talk ](https://www.youtube.com/watch?v=xsSnOQynTHs). It is a “state container” inspired by the unidirectional [ Flux ](http://facebook.github.io/flux/) data flow and functional [ Elm ](https://github.com/evancz/elm-architecture-tutorial/) architecture. It provides a predictable approach to managing state that benefits from immutability, keeps business logic contained, acts as the single source of truth, and has a very small API.” --[Gabriel Lebec](https://medium.com/fullstack-academy/thunks-in-redux-the-basics-85e538a3fe60)
 
 When we load a website and log in to our account, the website pulls lots of data totally relevant to our personalized user experience from its database and perhaps other places around the web to produce the experience we have. Think... all my user preferences, past posts, my location’s weather data, etc. Once that data is fetched, it becomes the “state” of my app and the environment we experience in the app.  All of that is essentially held on to locally. As we interact with our browser liking, toggling filters, deleting, etc. the “state” of the app changes and thus other things on the page.
 
@@ -28,38 +27,39 @@ As programmers, how do we keep up with all of that information and pass it all a
 
 ### Under the hood:
 Inside a connected component we don’t have access to the Redux store directly so we would typically  
-> ```javascript
-> import { connect } from ‘react-redux’```  
+```javascript
+import { connect } from ‘react-redux’
+```  
 
 and then, usually at the bottom of our component we  
 
-> ```javascript
-> const mapStateToProps = state => {
->   return {
->       stateItemToUse: state.reducer.stateItem
->   }
-> }
-> const mapDispatchToProps = dispatch => {
->   return {
->       actionToDispatch: () => ({ type: 'DISPATCH TYPE', action: action})
->   }
-> }
-> export default connect(mapStateToProps, mapDispatchToProps)(componentName)
-> ```  
+```javascript
+const mapStateToProps = state => {
+    return {
+        stateItemToUse: state.reducer.stateItem
+    }
+}
+const mapDispatchToProps = dispatch => {
+    return {
+        actionToDispatch: () => ({ type: 'DISPATCH TYPE', action: action})
+    }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(componentName)
+```  
 
 This gives us access to the store inside our component using [ this.props.actionToDispatch ](#) to dispatch an action to our store and update our state based on component logic or we use [ this.props.stateItemToUse ](#) to access data in the store.
 
 
 ## What is THUNK
-> Redux Thunk is a middleware that lets you call action creators that return a function instead of an action object. That function receives the store’s dispatch method, which is then used to dispatch regular synchronous actions inside the body of the function once the asynchronous operations have completed.
-> [Asynchronous Redux Actions Using Redux Thunk](https://www.digitalocean.com/community/tutorials/redux-redux-thunk#:~:text=Redux%20Thunk%20is%20a%20middleware,the%20asynchronous%20operations%20have%20completed.)
+> Redux Thunk is a middleware that lets you call action creators that return a function instead of an action object. That function receives the store’s dispatch method, which is then used to dispatch regular synchronous actions inside the body of the function once the asynchronous operations have completed.  
+> **[Asynchronous Redux Actions Using Redux Thunk](https://www.digitalocean.com/community/tutorials/redux-redux-thunk#:~:text=Redux%20Thunk%20is%20a%20middleware,the%20asynchronous%20operations%20have%20completed.)**
 
-> Redux-Thunk is a middleware that allows our action creators to return a function instead of an action object. The thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met. It looks at every action that passed thrugh the system; and if it’s a function, it calls that function. This is just another tool that can help us decouple our application logic from our view rendering.
-> [Front End Curriculum](https://frontend.turing.io/lessons/module-3/redux-thunk-middleware)
+> Redux-Thunk is a middleware that allows our action creators to return a function instead of an action object. The thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met. It looks at every action that passed thrugh the system; and if it’s a function, it calls that function. This is just another tool that can help us decouple our application logic from our view rendering.  
+> **[Front End Curriculum](https://frontend.turing.io/lessons/module-3/redux-thunk-middleware)**
 
 ## Why Thunk?
 1. **Async dispatch**  
-We often want to fetch data and save the response data to our Redux store when it comes back but dispatch does not know what to do with a promise. Stay tuned, you'll see how I did it without and then with Thunk.
+We often want to fetch data and save the response data to our Redux store when it comes back but dispatch does not know what to do with a promise. Stay tuned, you'll see how I did it pre and post-Thunk.
 1. **Components simple and focused on presentation (abstracting logic)**  
 Nice to abstract API calls, dispatches, & associated logic out of our component into /services or /actions
 1. **DRY!! - Duplication of code**  
@@ -96,7 +96,7 @@ But now our components sometimes call store.dispatch(syncActionCreator()), and s
 ## Example flow from my app:
 Here's how I refactored into Thunk implementation:  
 User signs up and a token is fetched from the back end. If the user gets a token from that fetch, we need to do another to fetchData that hydrates the app with all hte basic data needed to begin using the app. We don't want that same user to have to now login with that token. When a user logs in however, the exact same thing happens when the user is validated. We fetchData and hydrate the app for that user. Then, every time this user refreshes the page we use the componentDidMount hook to fetch the same data as well as when returning to the app after closing it (assuming they don't log out).
-This all makes sense but after my first pass, I had at least 20 lines of duplicate code for this in:  
+This all makes sense but after my first pass, I had at least 20 lines of duplicate code for this in: 
 * App.js
 * EmployerLogin.js
 * CaregiverLogin.js
@@ -203,7 +203,7 @@ export const fetchData = (userType) => {
     * This sets state.loading: true. If/when this function finishes loading that fetched data into store, state.loading is toggled to false triggering a wonderful refresh of our now hydrated app.
 1. we are not using dispatch mapped to props like we do in a connected component, rather we use the dispatch function passed in to dispatch actions to the store.  
 
-**Returning to Login.js...**  
+### Returning to Login.js...  
 We now have the following having refactored out the fetch, the action dispatches in mapStateToProps, and a handful of items in mapStateToProps:
 ```javascript
 handleLogin = token => {
@@ -214,7 +214,7 @@ this.props.fetchData(this.props.userType) // a thing of beauty to me
 }
 ```
 
-## Helpful Links
+## Promised Helpful Links
 1. [Thunks in Redux](https://medium.com/fullstack-academy/thunks-in-redux-the-basics-85e538a3fe60) by Gabriel Lebec
 1. [Stack Overflow: Why do we need middleware for async flow in Redux?](https://stackoverflow.com/questions/34570758/why-do-we-need-middleware-for-async-flow-in-redux) answered by Dan Abramov
 1. [Stack Overflow: Dispatching Redux Actions with a Timeout](https://stackoverflow.com/questions/35411423/how-to-dispatch-a-redux-action-with-a-timeout/35415559#35415559) answered by Dan Abramov
