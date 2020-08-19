@@ -2,11 +2,12 @@
 title: "Climbing the Redux Thunk learning curve"
 date: 2020-09-04T08:58:52-04:00
 author: Robert Phillips
-image : ""
-bg_image: ""
+image : "images/blog/thunk-monkey.jpg"
+bg_image: "images/blog/thunk-monkey.jpg"
 categories: ["Code"]
 tags: ["Redux","React", "Javascript"]
 description: "climbing the Redux Thunk learning curve"
+draft: false
 type: "post"
 ---
 
@@ -95,5 +96,125 @@ But now our components sometimes call store.dispatch(syncActionCreator()), and s
 ## Example flow from my app:
 Here's how I refactored into Thunk implementation:  
 User signs up and a token is fetched from the back end. If the user gets a token from that fetch, we need to do another to fetchData that hydrates the app with all hte basic data needed to begin using the app. We don't want that same user to have to now login with that token. When a user logs in however, the exact same thing happens when the user is validated. We fetchData and hydrate the app for that user. Then, every time this user refreshes the page we use the componentDidMount hook to fetch the same data as well as when returning to the app after closing it (assuming they don't log out).
-This all makes sense but after my first pass, I had at least 20 lines of duplicate code for this in App.js, EmployerLogin.js, CaregiverLogin.js, EmployerSignup.js, CaregiverSignup.js. So there is at least 80 lines of duplicate code and at least 5 places that need maintenance over the life of the app. Not to mention, a lot of logic cluttering these components. Right away I could smell this was wrong in the code and wondered how to fix it. As I was building it, I was under a time constraint to produce an MVP and I was ignorant of middleware like Thunk.
+This all makes sense but after my first pass, I had at least 20 lines of duplicate code for this in:  
+* App.js
+* EmployerLogin.js
+* CaregiverLogin.js
+* EmployerSignup.js
+* CaregiverSignup.js  
 
+So there is at least 80 lines of duplicate code and at least 5 places that need maintenance over the life of the app. Not to mention, a lot of logic cluttering these components. How did I get myself into this mess!?! Right away I could smell this was wrong in the code and wondered how to fix it. As I was building it, I was under a time constraint to produce an MVP and I was ignorant of middleware like Thunk.  
+
+## Refactoring
+Below is what I started with in my Login component. I am going to abstract this whole fetch and all the action dispatches using Thunk.
+```javascript
+import React from 'react';
+import { connect } from 'react-redux'
+import { withRouter } from 'react-router';
+import { API_ROOT} from '../services/apiRoot'
+
+handleLogin = token => { //this 
+    localStorage.setItem('auth_token', token);
+    localStorage.setItem('userType', this.props.userType);
+    this.props.setLoginStatus(true)
+
+    fetch(`${API_ROOT}/app_status`, fetchObj)
+      .then(res => res.json())
+      .then(appData => {
+        props.storeUserJobs(appData.jobs)
+        props.storeUserData(appData.user)
+        if (userType === 'employer') {
+          props.storeUserFavorites(appData.employer_favorites)
+          props.storeAuthoredReviews(appData.employer_reviews)
+          props.storeReviewsAboutMe(appData.caregiver_reviews)
+          props.storeCaregivers(appData.caregivers)
+        } else if (userType === 'caregiver') {
+          props.storeUserFavorites(appData.caregiver_favorites)
+          props.storeAuthoredReviews(appData.caregiver_reviews)
+          props.storeReviewsAboutMe(appData.employer_reviews)
+          props.storeEmployers(appData.employers)
+          props.storeAvailableJobs(appData.available_jobs)
+          props.storeInterestedJobs(appData.interested_jobs)
+        } else { console.log('No userType specific appData stored') }
+        props.hydrateComplete()
+      })
+      .catch(error => console.log(error))
+}
+```
+That's long, I know. I'm learning :) Anyhow, I'll spare you the mapDispatchToProps function where all those actions are configured. I think we get the point here. This is too much stuff to live in one component, let alone several.  
+
+## Thunk setup
+To set up Thunk first I needed to do the following pertinent things in **store.js**:
+Note what's imported. 'compose' allows me to combine the applyMiddleware arg with the REDUX DEVTOOLS EXTENSION.
+```javascript
+import { combineReducers, compose, createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk'
+
+export default createStore(
+  rootReducer,
+  compose( applyMiddleware(thunk), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__({trace: true}))
+);
+```
+Then I created this file in this folder: [src/actions/fetches.js](#)
+```javascript
+import { API_ROOT } from '../services/apiRoot'
+
+export const fetchData = (userType) => {
+    const auth_token = localStorage.getItem('auth_token')
+    const fetchObj = {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Auth-Token': auth_token,
+      }
+    }
+    return (dispatch) => {
+        dispatch({ type: 'LOADING_DATA' })
+        fetch(`${API_ROOT}/app_status`, fetchObj)
+        .then(res => res.json())
+        .then(appData => {
+            dispatch({ type: 'STORE_USER_JOBS', userJobs: appData.jobs })
+            dispatch({ type: 'STORE_USER_DATA', userData: appData.user })
+            if (userType === 'employer') {
+                dispatch({ type: 'STORE_USER_FAVORITES', userFavorites: appData.employer_favorites })
+                dispatch({ type: 'STORE_REVIEWS', authoredReviews: appData.employer_reviews })
+                dispatch({ type: 'STORE_REVIEWS_ABOUT_ME', reviewsAboutMe: appData.caregiver_reviews })
+                dispatch({ type: 'STORE_CAREGIVERS', caregivers: appData.caregivers })
+            } else if (userType === 'caregiver') {
+                dispatch({ type: 'STORE_USER_FAVORITES', userFavorites: appData.caregiver_favorites })
+                dispatch({ type: 'STORE_REVIEWS', authoredReviews: appData.caregiver_reviews })
+                dispatch({ type: 'STORE_REVIEWS_ABOUT_ME', reviewsAboutMe: appData.employer_reviews })
+                dispatch({ type: 'STORE_EMPLOYERS', employers: appData.employers })
+                dispatch({ type: 'STORE_AVAILABLE_JOBS', availableJobs: appData.available_jobs })
+                dispatch({ type: 'STORE_INTERESTED_JOBS', interestedJobs: appData.interested_jobs })
+            } else { console.log('No userType specific appData stored') }
+            dispatch({ type: 'FINISH_LOADING' })
+        })
+        .catch(error => console.log(error))
+    }
+}
+```
+**Note here:**
+1. action creator fetchData returns a function
+    * typical Redux action creators return objects with ({ type: type, action: action})
+1. this function is passed dispatch as an argument and userType
+1. the function fetches data async
+1. the first thing this action creator does is dispatch "LOADING_DATA'. 
+    * This sets state.loading: true. If/when this function finishes loading that fetched data into store, state.loading is toggled to false triggering a wonderful refresh of our now hydrated app.
+1. we are not using dispatch mapped to props like we do in a connected component, rather we use the dispatch function passed in to dispatch actions to the store.  
+
+**Returning to Login.js...**  
+We now have the following having refactored out the fetch, the action dispatches in mapStateToProps, and a handful of items in mapStateToProps:
+```javascript
+handleLogin = token => {
+localStorage.setItem('auth_token', token);
+localStorage.setItem('userType', this.props.userType);
+this.props.setLoginStatus(true)
+this.props.fetchData(this.props.userType) // a thing of beauty to me
+}
+```
+
+## Helpful Links
+1. [Thunks in Redux](https://medium.com/fullstack-academy/thunks-in-redux-the-basics-85e538a3fe60) by Gabriel Lebec
+1. [Stack Overflow: Why do we need middleware for async flow in Redux?](https://stackoverflow.com/questions/34570758/why-do-we-need-middleware-for-async-flow-in-redux) answered by Dan Abramov
+1. [Stack Overflow: Dispatching Redux Actions with a Timeout](https://stackoverflow.com/questions/35411423/how-to-dispatch-a-redux-action-with-a-timeout/35415559#35415559) answered by Dan Abramov
