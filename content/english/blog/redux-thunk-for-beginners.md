@@ -70,7 +70,7 @@ One fetch and subsequent dispatch in one place versus several == great improveme
 A core principle of Redux state management is that it's built upon and around pure functions. The ripple effects of API calls go against that principle and instead produce dependencies and more tight coupling of our components. This makes our code harder to test and reason about.
 1. **Component Coupling:**  
 Long, spelled out, detailed fetches, and customized dispatches to the store make our components harder to reuse or untether as our application grows... A big thanks to [Sandi Metz](https://www.poodr.com/) for enlightening me with the concepts of dependency injection and inversion control. I highly recommend her book!
-1. **Consistency in our API:**  `
+1. **Consistency in our API:**   
 Consider the following from: [Full Stack Academy](https://medium.com/fullstack-academy/thunks-in-redux-the-basics-85e538a3fe60)  
 > We could avoid all this and just store.dispatch inside our async handler...
 > ```javascript
@@ -188,8 +188,8 @@ export const fetchData = (userType) => {
         .catch(error => console.log(error))
     }
 }
-```
-**Note here:**
+```  
+**Of note here:**
 1. Action creator fetchData returns a function
     * Typical Redux action creators return objects with ({ type: type, action: action})... this is Thunk and new
 1. This function is passed dispatch as an argument and userType
