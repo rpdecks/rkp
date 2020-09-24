@@ -6,7 +6,7 @@ image : "images/blog/blog-post-3.jpg"
 bg_image: "images/featue-bg.jpg"
 categories: ["Code"]
 tags: ["API","Code", "Ruby"]
-description: "not as intimidating as it seems from the outside looking in"
+description: "Getting started with API's and web development"
 draft: false
 type: "post"
 ---

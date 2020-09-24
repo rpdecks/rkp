@@ -6,7 +6,7 @@ image : "images/blog/hammer.jpg"
 bg_image: "images/featue-bg.jpg"
 categories: ["Code", "Ruby"]
 tags: ["Advice","Technology","Code", "Ruby", "Debugging"]
-description: "learning to debug... smarter not harder"
+description: "Learning to debug... smarter not harder"
 draft: false
 type: "post"
 ---
