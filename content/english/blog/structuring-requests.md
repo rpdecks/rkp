@@ -10,9 +10,7 @@ description: "What is a proper ask and how to get helpful responses"
 draft: false
 type: "post"
 ---
-
-# Structuring Requests: Bettering your ask
-## What is a proper ask and how to get a helpful response
+## How to better your ask get more helpful responses
 
 Do you ever struggle getting help or even more, just getting a response sometimes? I have lost way too much sleep boiling over the lack of response to an ask with all kinds of crazy thoughts racing through my head. Sometimes it starts with, "don't these people check their email" and quickly spirals into suspicion, conspiracy theory, and beyond. What I have learned in the last twenty years is that the problem isn't usually them... very often it has been me. 
 
