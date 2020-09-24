@@ -52,8 +52,8 @@ service:
       name: React
 
     # service item loop
-    - icon : devicons-ruby
-      name: Ruby
+    - icon : devicons-ruby_on_rails
+      name: Ruby on Rails
 
     # service item loop
     - icon : devicons-postgresql
