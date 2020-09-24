@@ -3,10 +3,10 @@ title: "Static Site Generators Pros, Cons, & Surprises"
 date: 2020-08-04T08:58:52-04:00
 author: Robert Phillips
 image : "images/blog/static.jpg"
-bg_image: "images/blog/static.jpg"
+bg_image: "images/featue-bg.jpg"
 categories: ["Code"]
 tags: ["Hugo","Static Site Generators"]
-description: "pro's and con's of static site generators"
+description: "Pro's and con's of static site generators"
 draft: false
 type: "post"
 ---
