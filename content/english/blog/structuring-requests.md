@@ -1,12 +1,12 @@
 ---
-title: "Structuring Requests: How to ask better"
+title: "The Better Ask"
 date: 2020-09-24T08:58:52-04:00
 author: Robert Phillips
 image : "images/blog/ask.jpg"
 bg_image: "images/featue-bg.jpg"
 categories: ["Professional"]
 tags: ["Interpersonal"]
-description: "What is a proper ask and how to get helpful responses"
+description: "Structuring requests and getting more helpful responses"
 draft: false
 type: "post"
 ---
@@ -57,8 +57,8 @@ In this day and age it's so easy to fire off a request into the internet ether a
 I am reminded of a case where I found out the name of a person who had first hand knowledge of something in my family history that I wanted to know about. I wanted to contact him immediately but was told that his wife had just passed. It wasn't the time to ask him to do something for me. I think we all get the picture.  
 
 **When you are sending your ask over the internet:**
-- Will this person get a notification that wakes them up? 
-- Consider the medium and internet etiquette and ask correctly
+- Will this person get a notification that wakes them up?
+- Consider the medium and internet etiquette and ask correctly.
 - Is a text message really the best way?  
 
 ### **6. In person is better**
