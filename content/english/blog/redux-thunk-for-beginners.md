@@ -3,10 +3,10 @@ title: "Climbing the Redux Thunk learning curve"
 date: 2020-08-18T08:58:52-04:00
 author: Robert Phillips
 image : "images/blog/thunk-monkey.jpg"
-bg_image: "images/blog/thunk-monkey.jpg"
+bg_image: "images/featue-bg.jpg"
 categories: ["Code"]
 tags: ["Redux","React", "Javascript"]
-description: "what I wish I knew starting out with Thunk"
+description: "What I wish I knew starting out with Redux Thunk middleware"
 draft: false
 type: "post"
 ---

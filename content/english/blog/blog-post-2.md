@@ -6,7 +6,7 @@ image : "images/blog/tools.jpg"
 bg_image: "images/featue-bg.jpg"
 categories: ["Code","Vim"]
 tags: ["Advice","Code"]
-description: "my experience learning to use the VIM editor"
+description: "My experience learning to use the VIM editor"
 draft: false
 type: "post"
 ---
