@@ -32,9 +32,9 @@
 		padding: 0;
 
 		img {
-			width: 95%;
+			width: 100%;
 			height: auto;
-			margin-bottom: auto;
+			padding: 1rem;
 		}
 
 		&:hover {
@@ -55,7 +55,7 @@
 		width: 100%;
 		top: 0;
 		left: 0;
-		background: rgba(60, 55, 55, 0.5);
+		background: rgba(60, 55, 5, 0.5);
 		visibility: hidden;
 		opacity: 0;
 		transition: .3s ease;

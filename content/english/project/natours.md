@@ -2,7 +2,7 @@
 title: "Natours"
 description: "Website for a Nature Tours Provider"
 draft: false
-image : "images/portfolio/natours-demo.gif"
+image : "images/portfolio/natours.jpg"
 bg_image: "images/featue-bg.jpg"
 category: "CSS"
 deployed_url : "https://natours-rkp.netlify.app"
