@@ -5,7 +5,7 @@ author: Robert Phillips
 image : "images/blog/ask.jpg"
 bg_image: "images/featue-bg.jpg"
 categories: ["Professional"]
-tags: ["Interpersonal"]
+tags: ["Interpersonal", "Coaching", "Professional Development"]
 description: "Structuring requests and getting more helpful responses"
 draft: false
 type: "post"
@@ -22,22 +22,22 @@ Most of us generally are or want to be good people. We want to live a life that 
 We need to realize that just because we live in America and believe that the customer is always right... doesn't mean we are. I've needed to remind myself many times that I am the one with the problem not this person. I am the one who needs help and who is inconveniencing this other person. I need this person to stop doing things they care about and do what I care about. When we understand things in this light, our attitude shifts quite positively in the right direction. It actually starts to feel a little right to feel kind of sympathetic and bad for this person right? Good. That's better usually.
 
 ### **2. This response matters to me**  
-I have noticed that when I REALLY need something and/or the response I am looking for matters to me, everything about the ask changes. By this I mean, I spend a lot of time on my ask. I write and proof it several times. I make it as easy as I can for this recipient to answer me... even to answer me 'no' when the 'no' itself is valuable to me.  
+I have noticed that when I REALLY need something and/or the response I am looking for matters to me, everything about the ask changes. By this I mean, I spend a lot of time on my ask. I write and proofread it several times. I make it as easy as I can for this recipient to answer me... even to answer me 'no' when the 'no' itself is valuable to me.  
 
-Well, I have now also begun to see this in the asks that come to me. "Hey [person], we should get together sometime." How many times have we said this? We mean well but it usually doesn't happen. We genuinely like the person and want to see them again... but we are actually not that serious about it. When we are we say things like, "hey, when can we do this again? I'll be free on..."   
+Well, I have now also begun to see this in the 'asks' that come to me. "Hey [person], we should get together sometime." How many times have we said this? We mean well but it usually doesn't happen. We genuinely like the person and want to see them again... but we are actually not that serious about it. When we are serious we say things like, "hey, when can we do this again? I'll be free on..."   
 
 **_Remember:_** Your ask communicates how much the response matters to you. Let's think about that a little.
 
 ### **3. Detail matters**  
 When the response matters to me, I think about the details. Why?  
 
-Well, when this person opens up my email and while I have their attention... so I need to make sure I have every thing we need so this person can respond accurately the first time. How many times have you gotten an email that says something like, "when you get a chance can you tell me what you think about [insert not attached or linked to email thing here]." If we want someone to do something for us, we need to make sure they have everything they need to get the job done. It's better to assume we'll only get one shot at this and our audience must have everything they need to help us on their first pass. If one must take additional steps, email us back for somethign, or work really hard to find something then let's assume we failed. Again, when it matters to a lot to us, we do this stuff before we click send. Remember, we are inconveniencing this person and we want to make this as easy and painless as possible to help us..
+Well, when this person opens up my email and while I have their attention... so I need to make sure I have everything we need so this person can respond accurately the first time. How many times have you gotten an email that says something like, "when you get a chance can you tell me what you think about [insert not attached or linked to email thing here]." If we want someone to do something for us, we need to make sure they have everything they need to get the job done. It's better to assume we'll only get one shot at this and our audience must have everything they need to help us on their first pass. If one must take additional steps, email us back for something, or work really hard to find something then let's assume we failed. Again, when it matters alot to us, we do this stuff before we click send. Remember, we are inconveniencing this person and we want to make this as easy and painless as possible to help us..
 
 **Examples:**
 - "Hey, if this link doesn't work... here are some screenshots or a PDF of the same thing."
 - "I've included a map PDF and a link to it on Google maps... and Apple Maps."
 - "Here is a link to the article I found about this topic"
-- "Here are is the phone number you'll need..."
+- "Here is the phone number you'll need..."
 
 ### **4. Supporting information matters**
 Software engineering is helping me a lot in this area. If you are describing a problem, I've found this to be really helpful:  
@@ -64,14 +64,14 @@ I am reminded of a case where I found out the name of a person who had first han
 ### **6. In person is better**
 Speaking of the ether, requests that appear out of the ether are easier to dismiss. It's just a fact. Sometimes messages really matter to us but by the time we collapse after putting three kids to bed, we just forget to go back and respond to that text message even though we really meant to.  
 
-If it really matters to us, we probably find a way to go visit the person from whom we need help. Where it is possible, consider this. Again, because the response matters to us... let's take some time consider the other person, how much time they have, what we want to say, etc.
+If it really matters to us, we probably find a way to go visit the person from whom we need help. Where it is possible, consider this. Again, because the response matters to us... let's take some time to consider the other person, how much time they have, what we want to say, etc.
 
 ### **7. Demonstrate that you have already tried some things**
 - If you haven't even tried to solve the problem yourself, it's pretty hard to respond. Some people are of the ilk that it's bad for you to reward such behavior and thus encourage more of it.
-- Did you Google it? I hope so. It's better do that before you ask. If you did, mention it and a little about what you found.
+- Did you Google it? I hope so. It's better to do that before you ask. If you did, mention it and a little about what you found.
 
 ### **8. Clarity**
-Much of the time, when something is really important to me I find it is really hard to ask. I get anxious. In fact, for most of us it's just hard to ask for and even just to need help. I think this is part of what it means to be human. We all need help and have to come to grips with that somehow. I think is good for us actually and represents some type of growth. Anyhow, due to this I find it is hard to speak about my need or communicate clearly. This has also made me hard to help. Many times a helper has had to ask me what is I really want.
+Much of the time, when something is really important to me I find it is really hard to ask. I get anxious. In fact, for most of us it's just hard to ask for and even just to need help. I think this is part of what it means to be human. We all need help and have to come to grips with that somehow. I think this is good for us actually and represents some type of growth. Anyhow, due to this I find it is hard to speak about my need or communicate clearly. This has also made me difficult to help. Many times a helper has had to ask me what it is I really want.
 
 So my learning has been to get really good at boiling it down, crystallizing, and clarifying (firstly in spoken word even to myself) what it is that I want or at least think I need. This will help people help us. A number of times, someone tried to help me while misunderstanding my poorly crafted ask and spent a lot of time, energy, and even money doing something I didn't really want or need. I felt pretty bad about that.
 
