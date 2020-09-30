@@ -35,7 +35,7 @@ I have now also begun to see this in the 'asks' that come to me. "Hey [person], 
 
 When the response matters to me, I think about the details. Why?
 
-    When this person opens my email and while I have their attention I need to make sure I have everything needed so this person can respond accurately the first time. How many times have you gotten an email that says something like, "when you get a chance can you tell me what you think about [insert not attached or linked to email thing here]." If we want someone to do something for us, we need to make sure they have everything they need to get the job done. It's better to assume we'll only get one shot at this and our audience must have everything they need to help us on their first pass. If one must take additional steps, email us back for something, or work hard to find something then let's assume we failed. Again, when it matters to us, we do these things before we click send. Remember, we are inconveniencing this person and we want to make this as easy and painless as possible to help us..
+When this person opens my email and while I have their attention I need to make sure I have everything needed so this person can respond accurately the first time. How many times have you gotten an email that says something like, "when you get a chance can you tell me what you think about [insert not attached or linked to email thing here]." If we want someone to do something for us, we need to make sure they have everything they need to get the job done. It's better to assume we'll only get one shot at this and our audience must have everything they need to help us on their first pass. If one must take additional steps, email us back for something, or work hard to find something then let's assume we failed. Again, when it matters to us, we do these things before we click send. Remember, we are inconveniencing this person and we want to make this as easy and painless as possible to help us...
 
 **Examples:**
 
@@ -54,15 +54,15 @@ Software engineering is helping me a lot in this area. If you are describing a p
   - "The page does not redirect, and I get this error message. Bonus points... Here's a screenshot"
 - Say what you expect or want to happen
 - Detail what you have tried already
-- More extra credit: "I googled it and these two links to results..."
+- More extra credit: "I googled it and these two links to results were the most helpful..."
 - Include a picture
   - pro tip: your phone probably lets you mark that image up with arrows, circles, etc to really show me what you're talking about
 
 ### **5. Timing matters**
 
-In this day and age it's so easy to fire off a request into the internet ether any time of day and assume our target will see this at a good time. If we are wise, we may at least think about who we are asking and what their life is like especially if the response matters a lot to us. My kids are learning not to ask me anything until I have had some coffee in the morning. But also, not while I'm in the middle of something.
+In this day and age, it's so easy to fire off a request into the internet ether any time of day and assume our target will see this at a good time. If we are wise, we may at least think about who we are asking and what their life is like especially if the response matters a lot to us. My kids are learning not to ask me anything until I have had some coffee in the morning. But also, not while I'm in the middle of something.
 
-I am reminded of a case where I found out the name of a person who had first hand knowledge of something in my family history that I wanted to know about. I wanted to contact him immediately but was told that his wife had just passed. It wasn't the time to ask him to do something for me. I think we all get the picture.
+I am reminded of a case where I found out the name of a person who had first-hand knowledge of something in my family history that I wanted to know about. I wanted to contact him immediately but was told that his wife had just passed. It wasn't the time to ask him to do something for me. I think we all get the picture.
 
 **When you are sending your ask over the internet:**
 
