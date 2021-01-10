@@ -8,7 +8,7 @@ category: "React"
 deployed_url: "https://dispatch-app-front.herokuapp.com"
 information:
   - label: "Deploy status"
-    info: "[Live on Hekroku](https://dispatch-app-front.herokuapp.com/)"
+    info: "[Live on Heroku](https://dispatch-app-front.herokuapp.com/)"
   - label: "Demo"
     info: "[YouTube video](https://youtu.be/rcuHRYEueVA)"
   - label: "What We Did"
@@ -44,7 +44,8 @@ PostgreSQL database
 
 ### Future:
 
-Import API patient/assignment data from:  
- - Client database  
- - CSV file  
-Implement React Redux state management
+Import API patient/assignment data from:
+
+- Client database
+- CSV file  
+  Implement React Redux state management

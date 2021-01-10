@@ -8,7 +8,7 @@ category: "React"
 deployed_url : "https://babysitter-front.herokuapp.com/"
 information:
   - label : "Deploy status"
-    info : "[Live on Hekroku](https://babysitter-front.herokuapp.com)"
+    info : "[Live on Heroku](https://babysitter-front.herokuapp.com)"
   - label : "Demo"
     info : "[YouTube video](https://youtu.be/O9qfgxeag7g)"
   - label : "What We Did"
