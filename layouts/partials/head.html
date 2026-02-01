@@ -2,14 +2,13 @@
   <meta charset="utf-8">
   <title>{{ .Title }}</title>
 
-  <link href='/plugins/fontawesome/css/all.css' rel='stylesheet'>
-  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
-
-  <meta property="og:title" content="Robert Phillips Portfolio" />
-  <meta property="og:image" content="images/landing-screenshot.png" />
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:image" content="{{ "images/landing-screenshot.png" | absURL }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
+  <link rel="canonical" href="{{ .Permalink }}">
 
   {{ "<!-- mobile responsive meta -->" | safeHTML }}
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
   {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
