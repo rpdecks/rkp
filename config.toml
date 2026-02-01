@@ -63,10 +63,15 @@ location = "Athens, Georgia"
 # contact form action
 # contact form works with : https://formspree.io
 contact_form_action = "https://formspree.io/mgendwql" 
-# Google Analitycs
-google_analitycs_id = "" # Your ID# search
+# Google Analytics (GA4 Measurement ID like G-XXXXXXX)
+google_analytics_id = ""
 # multi-author support (if set to true, you must use an Array in the author field)
 multi_author = false
+
+[markup]
+	[markup.goldmark]
+		[markup.goldmark.renderer]
+			unsafe = true
 
 # Preloader
 [params.preloader]
@@ -82,7 +87,7 @@ link = "contact"
 # google map
 [params.gmap]
 enable = false
-gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
+gmap_api = ""
 map_latitude = "51.5223477"
 map_longitude = "-0.1622023"
 map_marker = "images/marker.png"
@@ -108,6 +113,7 @@ link = "https://www.github.com/rpdecks"
 [[params.social]]
 icon = "ion-ios-email" 
 link = "mailto:rpdecks@gmail.com"
+
 ################################ English Language ########################
 
 [Languages.en]
