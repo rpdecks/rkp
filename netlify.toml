@@ -8,7 +8,8 @@
   NODE_VERSION = "22"
 
   # Keep Hugo version consistent across production + previews.
-  HUGO_VERSION = "0.121.2"
+  # Keep this aligned with local Hugo; needed for hugo.IsMultilingual and pagination.pagerSize.
+  HUGO_VERSION = "0.155.2"
   HUGO_ENABLEGITINFO = "true"
   HUGO_EXTENDED = "true"
   
