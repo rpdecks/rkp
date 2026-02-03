@@ -19,7 +19,7 @@ information:
     info : "June 2020"
 ---
 
-## [ Nexter ](www.nexter-rkp.netlify.app)
+## [ Nexter ](https://nexter-rkp.netlify.app)
 
 Sample website for a real estate company that demonstrates modern responsive design using HTML / CSS Grid.  
 

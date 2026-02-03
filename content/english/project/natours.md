@@ -19,7 +19,7 @@ information:
     info : "September 2020"
 ---
 
-## [Natours Website](www.natours-rkp.netlify.app)
+## [Natours Website](https://natours-rkp.netlify.app)
 
 Sample website for a touring company that demonstrates modern responsive design using HTML / CSS.  
 
