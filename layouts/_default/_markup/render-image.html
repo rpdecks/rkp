@@ -1,1 +1,1 @@
-<a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "https" }} target="_blank"{{ end }}>{{ .Text }}</a>
+<img src="{{ .Destination | safeURL }}" alt="{{ with .Text }}{{ . }}{{ else }}{{ with .Title }}{{ . }}{{ else }}{{ end }}{{ end }}" loading="lazy">

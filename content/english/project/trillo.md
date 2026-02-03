@@ -19,7 +19,7 @@ information:
     info : "September 2020"
 ---
 
-## [Trillo Website](www.trillo-rkp.netlify.app)
+## [Trillo Website](https://trillo-rkp.netlify.app)
 
 Sample website for a touring company that demonstrates modern responsive design using HTML / CSS / Flexbox.
 
