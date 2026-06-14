@@ -1,0 +1,53 @@
+{{ define "main" }}
+{{ $data := index hugo.Data site.Language.Lang }}
+{{ $portfolio := $data.portfolio }}
+
+<main class="refresh-page refresh-writing-page">
+  <section class="refresh-section refresh-writing-hero">
+    <div class="refresh-shell refresh-section__intro refresh-section__intro--wide">
+      <p class="refresh-eyebrow">Writing</p>
+      <h1>{{ .Title }}</h1>
+      <p>{{ .Description }}</p>
+      <div class="refresh-content">
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+
+  <section class="refresh-section refresh-section--light">
+    <div class="refresh-shell">
+      <div class="refresh-category-grid refresh-category-grid--four">
+        {{ range $portfolio.writing.categories }}
+        <article class="refresh-mini-card">
+          <h2>{{ .name }}</h2>
+          <p>{{ .description }}</p>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  {{ $archive := site.GetPage "section" "blog" }}
+  {{ with $archive }}
+  <section class="refresh-section">
+    <div class="refresh-shell refresh-two-column">
+      <div class="refresh-section__intro">
+        <p class="refresh-eyebrow">Archive</p>
+        <h2>Earlier development posts</h2>
+        <p>Older posts are still available for continuity, but the main writing direction is shifting toward current work, coffee, business, and leadership.</p>
+        <a class="refresh-text-link" href="{{ .RelPermalink }}">Open old blog archive</a>
+      </div>
+      <div class="refresh-archive-list">
+        {{ range first 4 .RegularPages.ByDate.Reverse }}
+        <article>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <p>{{ .Summary | plainify | truncate 140 }}</p>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+</main>
+{{ end }}

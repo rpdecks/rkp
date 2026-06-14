@@ -1,17 +1,28 @@
-<footer class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="footer-manu">
-					<ul>
-            {{ range site.Menus.footer }}
-            <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
-            {{ end }}
-					</ul>
-				</div>
-				<p class="copyright">{{ site.Copyright | markdownify }}</p>
-			</div>
+{{ $data := index hugo.Data site.Language.Lang }}
+{{ $portfolio := $data.portfolio }}
+
+<footer class="refresh-site-footer">
+	<div class="refresh-shell refresh-site-footer__inner">
+		<div>
+			<a class="refresh-brand refresh-brand--footer" href="{{ "/" | relLangURL }}" aria-label="Robert Phillips home">
+				<span class="refresh-brand__mark">RP</span>
+				<span class="refresh-brand__text">Robert Phillips</span>
+			</a>
+			<p>{{ site.Params.description }}</p>
 		</div>
+		<nav class="refresh-site-footer__nav" aria-label="Footer navigation">
+			{{ range site.Menus.footer }}
+			<a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+			{{ end }}
+			<a href="/project/">Project archive</a>
+			<a href="/blog/">Old blog</a>
+		</nav>
+		<div class="refresh-site-footer__links" aria-label="Contact links">
+			{{ range $portfolio.contact.links }}
+			<a href="{{ .url | safeURL }}">{{ .label }}</a>
+			{{ end }}
+		</div>
+		<p class="refresh-site-footer__copyright">{{ site.Copyright | markdownify }}</p>
 	</div>
 </footer>
 

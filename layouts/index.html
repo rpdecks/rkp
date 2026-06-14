@@ -1,170 +1,134 @@
 {{ define "main" }}
+{{ $data := index hugo.Data site.Language.Lang }}
+{{ $portfolio := $data.portfolio }}
 
-{{ $data := index site.Data site.Language.Lang }}
-
-<!-- banner -->
-{{ if $data.homepage.banner.enable }}
-{{ with $data.homepage.banner }}
-<section class="slider {{if .bg_overlay}}overly{{end}}" style="background-image: url('{{ .bg_image | absURL }}');">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <h1>{{ .title | markdownify }}</h1>
-          <p>{{ .content | markdownify }}</p>
-          {{ if .button.enable }}
-          {{ with .button }}
-          <a href="{{ .link | relLangURL }}" target="_blank" class="btn btn-main animated fadeInUp">{{ .label }}</a>
-          {{ end }}
-          {{ end }}
-            <div class="row resume-links">
-              <div class="col-md-3">
-              </div>
-              <div class="col-md-2">
-                <a href="https://www.github.com/rpdecks">
-                  <i class="ion-social-github"></i>
-                  <p>GitHub</p>
-                </a>
-              </div>
-              <div class="col-md-2">
-                <a href="http://robertkevinphillips.com/resume.pdf">
-                  <i class="ion-document-text"></i>
-                  <p>Resume</p>
-                </a>
-              </div>
-              <div class="col-md-2">
-                <a href="https://www.linkedin.com/in/robertkevinphillips">
-                  <i class="ion-social-linkedin"></i>
-                  <p>LinkedIn</p>
-                </a>
-              </div>
-              <div class="col-md-3">
-              <!-- </div>   -->
-            </div>
-          </div>
+<main class="refresh-page">
+  <section class="refresh-hero" id="home">
+    <div class="refresh-shell refresh-hero__grid">
+      <div class="refresh-hero__content">
+        <p class="refresh-eyebrow">{{ $portfolio.hero.eyebrow }}</p>
+        <h1>{{ $portfolio.hero.title }}</h1>
+        <p class="refresh-hero__subtitle">{{ $portfolio.hero.subtitle }}</p>
+        <p class="refresh-hero__summary">{{ $portfolio.hero.summary }}</p>
+        <div class="refresh-actions" aria-label="Primary actions">
+          <a class="refresh-button refresh-button--primary" href="{{ $portfolio.hero.primary_cta.link }}">{{ $portfolio.hero.primary_cta.label }}</a>
+          <a class="refresh-button refresh-button--secondary" href="{{ $portfolio.hero.secondary_cta.link }}">{{ $portfolio.hero.secondary_cta.label }}</a>
         </div>
       </div>
+      <div class="refresh-hero__media">
+        <img src="{{ $portfolio.hero.image | relURL }}" alt="{{ $portfolio.hero.image_alt }}">
+      </div>
     </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-<!-- /banner -->
+  </section>
 
-<!-- Skills -->
-{{ if $data.homepage.service.enable }}
-{{ partial "service.html" . }}
-{{ end }}
-<!-- /skills -->
+  <section class="refresh-status" aria-label="Current profile">
+    <div class="refresh-shell refresh-status__grid">
+      {{ range $portfolio.status }}
+      <article>
+        <span>{{ .label }}</span>
+        <strong>{{ .value }}</strong>
+      </article>
+      {{ end }}
+    </div>
+  </section>
 
-<!-- Home projects -->
-{{ if $data.homepage.homeProjects.enable }}
-{{ partial "homeProjects.html" . }}
-{{ end }}
-<!-- /home projects -->
-
-{{ if $data.homepage.about.enable }}
-{{ with $data.homepage.about }}
-<!-- about -->
-<section class="about section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-7 col-sm-12">
-        <div class="block">
-          <div class="section-title">
-            <h2>{{ .title | markdownify }}</h2>
-            <p>{{ .description | markdownify }}</p>
+  <section class="refresh-section refresh-section--light" id="work">
+    <div class="refresh-shell refresh-two-column">
+      <div class="refresh-section__intro">
+        <p class="refresh-eyebrow">{{ $portfolio.experience.eyebrow }}</p>
+        <h2>{{ $portfolio.experience.title }}</h2>
+        <p>{{ $portfolio.experience.intro }}</p>
+      </div>
+      <div class="refresh-timeline">
+        {{ range $portfolio.experience.roles }}
+        <article class="refresh-panel">
+          <div class="refresh-panel__meta">
+            <span>{{ .period }}</span>
+            <strong>{{ .organization }}</strong>
           </div>
-          <p style="text-align: justify">{{ .content | markdownify }}</p>
-        </div>
-      </div>
-      <div class="col-md-5 col-sm-12">
-        <div class="block">
-          <div class="about-img"></div>
-            <img src="{{ .image | relURL }}" class="img-responsive" alt="laptop with coffee" style="padding: 60px 0px 0px 0px">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /about -->
-{{ end }}
-{{ end }}
-
-{{ if $data.homepage.portfolio.enable }}
-{{ with $data.homepage.portfolio }}
-<!-- portfolio -->
-<section class="feature bg-2" style="background-image: url('{{ .bg_image | absURL}}')">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-6">
-        <h2 class="section-subtitle">{{ .title | markdownify }}</h2>
-        {{ .content | markdownify }}
-        {{ if .button.enable }}
-        {{ with .button }}
-        <a href="{{ .link | relLangURL }}" class="btn btn-view-works">{{ .label }}</a>
-        {{ end }}
-        {{ end }}
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /portfolio -->
-{{ end }}
-{{ end }}
-
-<!-- Call to action -->
-{{ if $data.homepage.cta.enable }}
-{{ partial "cta.html" . }}
-{{ end }}
-<!-- /Call to action -->
-
-{{ if $data.homepage.funfacts.enable }}
-{{ with $data.homepage.funfacts }}
-<!-- Content Start -->
-<section class="testimonial">
-  <div class="container">
-    <div class="row">
-      <div class="section-title text-center">
-        <h2>{{ .title | markdownify }}</h2>
-        <p>{{ .description | markdownify }}</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="block">
-          <ul class="counter-box clearfix">
-            {{ range .funfact_item }}
-            <li class="counter-item">
-              <i class="{{ .icon }}"></i>
-              <h4 class="count" data-count="{{ .count }}">0</h4>
-              <span>{{ .name | markdownify }}</span>
-            </li>
+          <h3>{{ .role }}</h3>
+          <p>{{ .summary }}</p>
+          <ul>
+            {{ range .bullets }}
+            <li>{{ . }}</li>
             {{ end }}
           </ul>
-        </div>
-      </div>
-      <div class="col-md-5 col-md-offset-1">
-        <div class="testimonial-carousel text-center">
-          <div class="testimonial-slider owl-carousel">
-            {{ range .testimonial_slider }}
-            <div>
-              <i class="ion-quote"></i>
-              <p>"{{ .content | markdownify }}"</p>
-              <div class="user">
-                <img src="{{ .image | relURL }}" alt="client">
-                <p><span>{{ .name | markdownify }}</span> {{ .designation | markdownify }}</p>
-              </div>
-            </div>
-            {{ end }}
-          </div>
-        </div>
+        </article>
+        {{ end }}
       </div>
     </div>
-  </div>
-</section>
-{{ end}}
-{{ end}}
+  </section>
 
+  <section class="refresh-section" id="proof">
+    <div class="refresh-shell">
+      <div class="refresh-section__intro refresh-section__intro--wide">
+        <p class="refresh-eyebrow">{{ $portfolio.case_studies.eyebrow }}</p>
+        <h2>{{ $portfolio.case_studies.title }}</h2>
+      </div>
+      <div class="refresh-proof-grid">
+        {{ range $portfolio.case_studies.items }}
+        <article class="refresh-card">
+          <span>{{ .label }}</span>
+          <h3>{{ .title }}</h3>
+          <p>{{ .summary }}</p>
+          {{ with .link }}
+          <a href="{{ .url | relURL }}">{{ .label }}</a>
+          {{ end }}
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="refresh-section refresh-acer" id="acer">
+    <div class="refresh-shell refresh-acer__grid">
+      <div class="refresh-acer__image">
+        <img src="{{ $portfolio.acer.image | relURL }}" alt="{{ $portfolio.acer.image_alt }}">
+      </div>
+      <div>
+        <p class="refresh-eyebrow">{{ $portfolio.acer.eyebrow }}</p>
+        <h2>{{ $portfolio.acer.title }}</h2>
+        <p class="refresh-lede">{{ $portfolio.acer.summary }}</p>
+        <ul class="refresh-check-list">
+          {{ range $portfolio.acer.details }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+        <a class="refresh-button refresh-button--primary" href="{{ $portfolio.acer.link.url }}">{{ $portfolio.acer.link.label }}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="refresh-section refresh-section--light" id="writing">
+    <div class="refresh-shell refresh-two-column">
+      <div class="refresh-section__intro">
+        <p class="refresh-eyebrow">{{ $portfolio.writing.eyebrow }}</p>
+        <h2>{{ $portfolio.writing.title }}</h2>
+        <p>{{ $portfolio.writing.summary }}</p>
+        <a class="refresh-text-link" href="{{ $portfolio.writing.link.url | relURL }}">{{ $portfolio.writing.link.label }}</a>
+      </div>
+      <div class="refresh-category-grid">
+        {{ range $portfolio.writing.categories }}
+        <article class="refresh-mini-card">
+          <h3>{{ .name }}</h3>
+          <p>{{ .description }}</p>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="refresh-contact" id="contact">
+    <div class="refresh-shell refresh-contact__inner">
+      <p class="refresh-eyebrow">{{ $portfolio.contact.eyebrow }}</p>
+      <h2>{{ $portfolio.contact.title }}</h2>
+      <p>{{ $portfolio.contact.summary }}</p>
+      <div class="refresh-contact__links" aria-label="Contact links">
+        {{ range $portfolio.contact.links }}
+        <a href="{{ .url | safeURL }}">{{ .label }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+</main>
 {{ end }}

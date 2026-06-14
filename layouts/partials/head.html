@@ -3,9 +3,11 @@
   <title>{{ .Title }}</title>
 
   <meta property="og:title" content="{{ .Title }}" />
-  <meta property="og:image" content="{{ "images/landing-screenshot.png" | absURL }}" />
+  <meta property="og:description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}" />
+  <meta property="og:image" content="{{ with site.Params.og_image }}{{ . | absURL }}{{ else }}{{ "images/landing-screenshot.png" | absURL }}{{ end }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
   <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="{{ .Permalink }}">
 
   {{ "<!-- mobile responsive meta -->" | safeHTML }}
