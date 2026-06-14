@@ -1,0 +1,112 @@
+hero:
+  eyebrow: "Technical leadership, craftsmanship, founder energy"
+  title: "Robert Phillips"
+  subtitle: "I help practical teams modernize the systems that carry their work, and I build businesses with the same care."
+  summary: "Tech lead at Bibles for America, founder of Acer Coffee, and a builder drawn to operations, quality, craftsmanship, and durable tools."
+  primary_cta:
+    label: "Talk about a project"
+    link: "#contact"
+  secondary_cta:
+    label: "See current work"
+    link: "#work"
+  image: "images/company/about_rkp.jpg"
+  image_alt: "Robert Phillips"
+
+status:
+  - label: "Current role"
+    value: "Tech Lead, Bibles for America"
+  - label: "Builder mode"
+    value: "Acer Coffee founder/operator"
+  - label: "Open to"
+    value: "Partnerships, consulting, and serious inquiries"
+
+experience:
+  eyebrow: "Current work"
+  title: "Modernizing real operating systems"
+  intro: "Since 2021, my work at Bibles for America has moved from full-stack contribution into shared technical leadership."
+  roles:
+    - organization: "Bibles for America"
+      period: "2021-present"
+      role: "Tech Lead"
+      summary: "Helped guide a broad modernization effort from primarily Ruby on Rails full-stack apps and Jekyll sites toward a composable platform."
+      bullets:
+        - "Adopted AI-assisted workflows and modernized business systems across product, content, and operations."
+        - "Helped shift platform architecture toward Shopify, AdminJS, AWS Lambda functions, and focused services."
+        - "Added end-to-end testing and substantially expanded CI/CD coverage to improve quality control and speed to production."
+        - "Promoted to tech lead in 2026."
+    - organization: "Earlier foundation"
+      period: "2002-2020"
+      role: "Engineering, construction, ministry leadership, and software transition"
+      summary: "Industrial and systems engineering, technical sales, team leadership, and a deliberate move into software development."
+      bullets:
+        - "Built a systems-first lens through Georgia Tech engineering, HVAC/construction consulting, and cross-functional leadership."
+        - "Moved into software through full-stack Rails and React work, static sites, automation, and quality-focused delivery."
+
+case_studies:
+  eyebrow: "Selected proof"
+  title: "Where the through-line shows up"
+  items:
+    - title: "BfA platform modernization"
+      label: "Architecture"
+      summary: "Helped evolve a legacy Rails/Jekyll-centered environment into a more composable platform using Shopify, AdminJS, AWS Lambda, and targeted services."
+    - title: "Quality systems and delivery"
+      label: "Engineering practice"
+      summary: "Introduced and expanded end-to-end testing, CI/CD workflows, and release quality controls so production changes could move faster with less risk."
+    - title: "Acer Coffee"
+      label: "Founder/operator"
+      summary: "Built the business, shop, product model, and online sales flow for a small-batch roasting company now open for nationwide shipping."
+    - title: "Dispatch"
+      label: "Archived project"
+      summary: "An earlier Mapbox/Rails/React project for assigning service workers across a metro area. Kept as a useful marker of product thinking and location-based workflow design."
+      link:
+        label: "View archive"
+        url: "/project/dispatch/"
+
+acer:
+  eyebrow: "Founder case study"
+  title: "Acer Coffee is where craft, software, and operations meet."
+  summary: "Acer Coffee began officially around Thanksgiving 2025 as a real business build: equipment, shop fit-out, roasting operations, product setup, online sales, subscriptions, and nationwide shipping."
+  image: "images/acer/palmatum.jpg"
+  image_alt: "Acer Coffee roasted coffee product photography"
+  link:
+    label: "Visit Acer Coffee"
+    url: "https://acercoffee.com"
+  details:
+    - "Small-batch roasting with an emphasis on fresh coffee for home brewing."
+    - "One-off online purchases and subscription flows built for repeat customers."
+    - "Founder-led operations spanning product, software, packaging, fulfillment, and customer experience."
+    - "A fledgling business now opened beyond local sales into nationwide shipping."
+
+writing:
+  eyebrow: "Writing"
+  title: "A new home for field notes"
+  summary: "The old blog remains archived, but future writing should be intentional: coffee notes, business lessons, engineering practice, and leadership reflections in one place."
+  link:
+    label: "Open writing hub"
+    url: "/writing/"
+  categories:
+    - name: "Coffee"
+      description: "Roasting notes, brewing experiments, origin learning, and customer education."
+    - name: "Business"
+      description: "Founder lessons from building Acer Coffee while staying close to software work."
+    - name: "Engineering"
+      description: "Modernization, CI/CD, testing, composable architecture, and pragmatic delivery."
+    - name: "Leadership"
+      description: "Teams, responsibility, communication, faith-shaped integrity, and durable work."
+
+contact:
+  eyebrow: "Contact"
+  title: "Open to serious conversations."
+  summary: "I am not actively job hunting. I am happy in my current tech lead role and building Acer Coffee, but I want the door open for meaningful partnerships, consulting, investment conversations, and unusual opportunities that fit the season."
+  email: "rpdecks@gmail.com"
+  links:
+    - label: "Email"
+      url: "mailto:rpdecks@gmail.com"
+    - label: "LinkedIn"
+      url: "https://www.linkedin.com/in/robertkevinphillips"
+    - label: "GitHub"
+      url: "https://www.github.com/rpdecks"
+    - label: "Acer Coffee"
+      url: "https://acercoffee.com"
+    - label: "Resume"
+      url: "/resume.pdf"

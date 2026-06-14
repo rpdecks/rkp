@@ -1,4 +1,4 @@
-{{ $data := index site.Data site.Language.Lang }}
+{{ $data := index hugo.Data site.Language.Lang }}
 {{ with $data.homepage.homeProjects }}
 <section class="homeProjects bg-1 section-sm overly" style="background-image: url('{{.bg_image | absURL }}');">
   <div class="container">

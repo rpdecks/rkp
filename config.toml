@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 baseURL = "https://www.robertkevinphillips.com"
-title = "Robert Phillips Portfolio"
+title = "Robert Phillips"
 theme = "airspace-hugo"
 # post pagination
 
@@ -56,8 +56,9 @@ sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
 [params]
 logo = "images/logo.png"
 # Meta data
-description = "This is meta description"
-author = "Themefisher"
+description = "Robert Phillips is a technical lead, systems modernizer, and founder of Acer Coffee. Open to serious partnerships, consulting, and meaningful opportunities."
+author = "Robert Phillips"
+og_image = "images/acer/coffee-cherries.jpg"
 # Contact Information
 phone = "(678) 662-8857"
 email = "rpdecks@gmail.com"
@@ -77,14 +78,14 @@ multi_author = false
 
 # Preloader
 [params.preloader]
-enable = true
+enable = false
 preloader = "" # use .png , .svg or .gif format
 
 # Navigation get start button
 [params.nav_button]
-enable = true
-label = "Get A Quote"
-link = "contact"
+enable = false
+label = "Contact"
+link = "#contact"
 
 # google map
 [params.gmap]
@@ -97,12 +98,8 @@ map_marker = "images/marker.png"
   
 ############################# social site ########################
 [[params.social]]
-icon = "ion-social-facebook-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "https://www.facebook.com/rpdecks"
-
-[[params.social]]
-icon = "ion-social-twitter-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
+icon = "ion-coffee" #ionicon pack v2 : https://ionicons.com/v2/
+link = "https://acercoffee.com"
 
 [[params.social]]
 icon = "ion-social-linkedin-outline" #ionicon pack v2 : https://ionicons.com/v2/
@@ -119,12 +116,12 @@ link = "mailto:rpdecks@gmail.com"
 ################################ English Language ########################
 
 [Languages.en]
-languageName = "En"
-languageCode = "en-us"
+label = "En"
+locale = "en-us"
 contentDir = "content/english"
 weight = 1
 # copyright
-copyright = "Copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved"
+copyright = "Copyright &copy; 2026 Robert Phillips. Built with Hugo and hosted on Netlify."
 
 
 ######################### english navigation #############################
@@ -135,23 +132,23 @@ URL = "/"
 weight = 1
 
 [[Languages.en.menu.main]]
-name = "About"
-URL = "about"
+name = "Work"
+URL = "/#work"
 weight = 2
 
 [[Languages.en.menu.main]]
-name = "Projects"
-URL = "project"
+name = "Acer Coffee"
+URL = "/#acer"
 weight = 3
 
 [[Languages.en.menu.main]]
-name = "Blog"
-URL = "blog"
+name = "Writing"
+URL = "writing"
 weight = 4
 
 [[Languages.en.menu.main]]
 name = "Contact"
-URL = "contact"
+URL = "/#contact"
 weight = 5
 
 # footer menu
@@ -161,29 +158,29 @@ URL = "/"
 weight = 1
 
 [[Languages.en.menu.footer]]
-name = "About"
-URL = "about"
+name = "Work"
+URL = "/#work"
 weight = 2
 
 [[Languages.en.menu.footer]]
-name = "Projects"
-URL = "project"
+name = "Acer Coffee"
+URL = "/#acer"
 weight = 3
 
 [[Languages.en.menu.footer]]
-name = "Blog"
-URL = "blog"
+name = "Writing"
+URL = "writing"
 weight = 4
 
 [[Languages.en.menu.footer]]
 name = "Contact"
-URL = "contact"
+URL = "/#contact"
 weight = 5
 
 ################################ France Language ########################
 [Languages.fr]
-languageName = "Fr"
-languageCode = "fr-fr"
+label = "Fr"
+locale = "fr-fr"
 contentDir = "content/french"
 weight = 2
 # copyright
