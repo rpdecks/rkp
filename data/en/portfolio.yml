@@ -2,9 +2,9 @@ hero:
   eyebrow: "Technical leadership, systems craft, and founder energy"
   title: "Robert Phillips"
   subtitle: "I help practical teams modernize the systems that carry their work, and I build businesses with the same care."
-  summary: "Part-time tech lead at Bibles for America, founder of Acer Coffee, and a builder drawn to operations, quality, and durable tools."
+  summary: "Tech lead at Bibles for America, founder of Acer Coffee, and a builder drawn to operations, quality, craftsmanship, and durable tools."
   primary_cta:
-    label: "Start a serious conversation"
+    label: "Talk about a project"
     link: "#contact"
   secondary_cta:
     label: "See current work"
@@ -33,7 +33,7 @@ experience:
         - "Adopted AI-assisted workflows and modernized business systems across product, content, and operations."
         - "Helped shift platform architecture toward Shopify, AdminJS, AWS Lambda functions, and focused services."
         - "Added end-to-end testing and substantially expanded CI/CD coverage to improve quality control and speed to production."
-        - "Promoted into a shared leadership role with a project manager after taking on broader technical direction."
+        - "Promoted to tech lead in 2026."
     - organization: "Earlier foundation"
       period: "2002-2020"
       role: "Engineering, construction, ministry leadership, and software transition"
