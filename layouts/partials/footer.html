@@ -33,12 +33,12 @@
 
 <!-- JS Plugins -->
 {{ range site.Params.plugins.js}}
-<script src="{{ .link | absURL }}"></script>
+<script src="{{ .link | relURL }}"></script>
 {{ end }}
 
 <!-- Main Script -->
 {{ $script := resources.Get "js/script.js" | minify}}
-<script src="{{ $script.Permalink }}"></script>
+<script src="{{ $script.RelPermalink }}"></script>
 
 <!-- Google Analytics (gtag.js) -->
 {{ $ga := "" }}
