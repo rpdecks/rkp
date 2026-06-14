@@ -98,7 +98,7 @@ map_marker = "images/marker.png"
   
 ############################# social site ########################
 [[params.social]]
-icon = "ion-social-facebook-outline" #ionicon pack v2 : https://ionicons.com/v2/
+icon = "ion-coffee" #ionicon pack v2 : https://ionicons.com/v2/
 link = "https://acercoffee.com"
 
 [[params.social]]

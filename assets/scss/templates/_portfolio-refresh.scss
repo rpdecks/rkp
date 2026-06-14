@@ -20,6 +20,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   color: var(--refresh-ink);
   font-family: var(--refresh-font-sans);
@@ -51,6 +57,10 @@ body:has(.refresh-page) {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
+}
+
+.refresh-site-nav::-webkit-scrollbar {
+  display: none;
 }
 
 .refresh-brand {
@@ -129,7 +139,7 @@ body:has(.refresh-page) {
   padding: 82px 0 56px;
   background:
     linear-gradient(90deg, rgba(27, 26, 23, 0.91), rgba(27, 26, 23, 0.7)),
-    url("/images/acer/coffee-cherries.jpg") center/cover;
+    url("/images/acer/coffee-cherries.jpg") center 45%/cover;
   color: var(--refresh-cream);
 }
 
@@ -323,6 +333,7 @@ body:has(.refresh-page) {
   border: 1px solid var(--refresh-line);
   border-radius: var(--refresh-radius);
   background: var(--refresh-white);
+  box-shadow: 0 1px 0 rgba(27, 26, 23, 0.03);
 }
 
 .refresh-panel {
@@ -396,6 +407,8 @@ body:has(.refresh-page) {
 .refresh-card {
   min-height: 272px;
   padding: 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 .refresh-card span {
@@ -601,45 +614,119 @@ body:has(.refresh-page) {
 
 @media (max-width: 720px) {
   .refresh-shell {
-    width: calc(100% - 28px);
+    width: calc(100% - 30px);
     max-width: 1120px;
   }
 
   .refresh-site-header__inner {
-    min-height: 86px;
+    min-height: auto;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
+    gap: 12px;
+    padding: 18px 0 17px;
+  }
+
+  .refresh-brand {
     gap: 10px;
   }
 
+  .refresh-brand__mark {
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+  }
+
+  .refresh-brand__text {
+    font-size: 15px;
+  }
+
   .refresh-site-nav {
+    width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
     justify-content: flex-start;
-    gap: 8px 14px;
+    gap: 17px;
+    padding: 0 0 2px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .refresh-site-nav a {
+    flex: 0 0 auto;
+    font-size: 14px;
   }
 
   .refresh-hero {
-    padding: 52px 0 42px;
+    padding: 46px 0 38px;
+    background:
+      linear-gradient(90deg, rgba(27, 26, 23, 0.89), rgba(27, 26, 23, 0.76)),
+      url("/images/acer/coffee-cherries.jpg") 42% center/cover;
   }
 
   .refresh-hero h1 {
-    font-size: 46px;
+    font-size: 43px;
+    line-height: 0.96;
+  }
+
+  .refresh-eyebrow {
+    max-width: 280px;
+    margin-bottom: 12px;
+    font-size: 11px;
+    line-height: 1.35;
   }
 
   .refresh-hero__subtitle {
-    font-size: 22px;
+    margin-top: 14px;
+    font-size: 21px;
+    line-height: 1.32;
+  }
+
+  .refresh-hero__summary {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 1.68;
+  }
+
+  .refresh-actions {
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .refresh-button {
+    min-height: 48px;
+    padding: 13px 16px;
+  }
+
+  .refresh-hero__media {
+    display: none;
   }
 
   .refresh-section,
   .refresh-contact {
-    padding: 58px 0;
+    padding: 54px 0;
   }
 
   .refresh-section__intro h1,
   .refresh-section__intro h2,
   .refresh-acer h2,
   .refresh-contact h2 {
-    font-size: 36px;
+    font-size: 34px;
+    line-height: 1.08;
+  }
+
+  .refresh-section__intro p,
+  .refresh-lede,
+  .refresh-contact p,
+  .refresh-content {
+    margin-top: 14px;
+    font-size: 16px;
+    line-height: 1.72;
+  }
+
+  .refresh-two-column,
+  .refresh-acer__grid {
+    gap: 28px;
   }
 
   .refresh-status__grid,
@@ -650,10 +737,70 @@ body:has(.refresh-page) {
     grid-template-columns: 1fr;
   }
 
+  .refresh-status {
+    background: var(--refresh-paper);
+  }
+
+  .refresh-status__grid {
+    gap: 10px;
+    padding: 14px 0;
+  }
+
   .refresh-status article,
   .refresh-status article:last-child {
-    border-right: 1px solid var(--refresh-line);
-    border-bottom: 1px solid var(--refresh-line);
+    border: 1px solid var(--refresh-line);
+    border-radius: var(--refresh-radius);
+    background: var(--refresh-white);
+    padding: 18px 20px;
+  }
+
+  .refresh-status strong {
+    font-size: 16px;
+  }
+
+  .refresh-panel,
+  .refresh-card,
+  .refresh-mini-card,
+  .refresh-archive-list article {
+    padding: 22px;
+  }
+
+  .refresh-panel h3,
+  .refresh-card h3,
+  .refresh-mini-card h3,
+  .refresh-mini-card h2 {
+    font-size: 25px;
+  }
+
+  .refresh-card,
+  .refresh-mini-card {
+    min-height: auto;
+  }
+
+  .refresh-card span {
+    margin-bottom: 12px;
+  }
+
+  .refresh-acer__image img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .refresh-contact__inner {
+    text-align: left;
+  }
+
+  .refresh-contact__links {
+    justify-content: flex-start;
+  }
+
+  .refresh-site-footer__inner {
+    gap: 28px;
+    padding: 38px 0;
+  }
+
+  .refresh-site-footer__nav,
+  .refresh-site-footer__links {
+    gap: 9px;
   }
 
   .refresh-actions,
@@ -665,5 +812,21 @@ body:has(.refresh-page) {
   .refresh-button,
   .refresh-contact__links a {
     width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .refresh-site-nav {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    gap: 9px 16px;
+  }
+
+  .refresh-hero h1 {
+    font-size: 39px;
+  }
+
+  .refresh-hero__subtitle {
+    font-size: 20px;
   }
 }

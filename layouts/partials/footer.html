@@ -14,14 +14,14 @@
 			{{ range site.Menus.footer }}
 			<a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
 			{{ end }}
-			<a href="/project/">Project archive</a>
-			<a href="/blog/">Old blog</a>
+			<a href="{{ "project/" | relLangURL }}">Project archive</a>
+			<a href="{{ "blog/" | relLangURL }}">Old blog</a>
 		</nav>
-		<div class="refresh-site-footer__links" aria-label="Contact links">
+		<nav class="refresh-site-footer__links" aria-label="Contact links">
 			{{ range $portfolio.contact.links }}
 			<a href="{{ .url | safeURL }}">{{ .label }}</a>
 			{{ end }}
-		</div>
+		</nav>
 		<p class="refresh-site-footer__copyright">{{ site.Copyright | markdownify }}</p>
 	</div>
 </footer>
